@@ -1,0 +1,2153 @@
+{
+  "nodes": {
+    "0": {
+      "id": 0,
+      "topic": "Generate diverse SEO tasks using 10 core tools calling a single tool\n",
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        15,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        29
+      ],
+      "parents": [],
+      "metadata": {
+        "uuid": "6626b4cf-a8ef-47a4-b824-1062a7b673f8",
+        "topic_hash": "70cc0bdeec469a2a33aafe65c3f34b0949c2c996d7f2a2f9ae4896c7fdfcae06"
+      }
+    },
+    "1": {
+      "id": 1,
+      "topic": "Understanding Diverse SEO Task Categories",
+      "children": [
+        7,
+        12,
+        16,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "parents": [
+        0
+      ],
+      "metadata": {
+        "uuid": "90f2f47e-7a6f-4fcc-9843-d1dc35c34c26",
+        "topic_hash": "a872234c760b20463d3ddeaafe57d207d7f3d32bd4c4270f18a7e59682e2300d"
+      }
+    },
+    "2": {
+      "id": 2,
+      "topic": "Key Features of the 10 Core SEO Tools",
+      "children": [
+        6,
+        8,
+        13,
+        16,
+        17,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "parents": [
+        0
+      ],
+      "metadata": {
+        "uuid": "1c856e10-22fb-4346-a743-fd13c8aa5ac0",
+        "topic_hash": "9bc4a9a2bd4ffe211e6fb7f3eaf015cfdd76a59ff7d74b3999591c0128930d36"
+      }
+    },
+    "3": {
+      "id": 3,
+      "topic": "Designing the Single Orchestration Tool for SEO Task Management",
+      "children": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        20,
+        27
+      ],
+      "parents": [
+        0
+      ],
+      "metadata": {
+        "uuid": "433e12a4-edc0-4d58-b9f5-11af927cf154",
+        "topic_hash": "7c4c68482b2650580e4511d2ec78210762f0de53638ed89f5c6f222198512bb4"
+      }
+    },
+    "4": {
+      "id": 4,
+      "topic": "Automated Workflow for Generating SEO Tasks",
+      "children": [
+        9,
+        11,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        28
+      ],
+      "parents": [
+        0
+      ],
+      "metadata": {
+        "uuid": "4c49d51f-8128-4993-bc0f-2846630d082e",
+        "topic_hash": "24f19a89ebd552f22064b5b3c169cd635d278f938e53a120a834970ef7833170"
+      }
+    },
+    "5": {
+      "id": 5,
+      "topic": "Benefits and Challenges of Unified SEO Task Generation",
+      "children": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        30
+      ],
+      "parents": [
+        0
+      ],
+      "metadata": {
+        "uuid": "8a20a2c9-a04e-43a6-b3b8-e4964c8fa0ec",
+        "topic_hash": "edbcfd663bf3e474579d5312d902f69d861e6683c6e06ac320de4fbbf0ac9161"
+      }
+    },
+    "6": {
+      "id": 6,
+      "topic": "Architecture of the Orchestration Tool",
+      "children": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "parents": [
+        3,
+        2
+      ],
+      "metadata": {
+        "uuid": "559f8282-20ce-4225-8210-109b15ae09bd",
+        "topic_hash": "49141619c220bf391cc9873f0b6e2a785355747bfed5be32b548003d4d2561ff"
+      }
+    },
+    "7": {
+      "id": 7,
+      "topic": "Defining Task Inputs and Outputs for Orchestration",
+      "children": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "parents": [
+        3,
+        1
+      ],
+      "metadata": {
+        "uuid": "629f8b0f-61e3-4ab6-b3e3-413fa5d4aea5",
+        "topic_hash": "989c44c260c55c7898001e410190579faf7e16b57788299c3f30bce7f83820df"
+      }
+    },
+    "8": {
+      "id": 8,
+      "topic": "Integration APIs and Connectors for 10 Core Tools",
+      "children": [
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "parents": [
+        3,
+        2
+      ],
+      "metadata": {
+        "uuid": "0b07a070-d25b-4248-9f61-4f845e480f5a",
+        "topic_hash": "2f9253c79efdba117b4bb5e6c8b00fb327569e226ea546ca1696e993427dac8a"
+      }
+    },
+    "9": {
+      "id": 9,
+      "topic": "Workflow Engine and Task Scheduling Logic",
+      "children": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "parents": [
+        3,
+        4
+      ],
+      "metadata": {
+        "uuid": "4efdf866-67d0-4413-8239-a695696d291e",
+        "topic_hash": "92b7f2da8a557725b29125ece2f5a33be832b5468a73b3a062602b5698d63f98"
+      }
+    },
+    "10": {
+      "id": 10,
+      "topic": "User Interface (UI) and Reporting Dashboard Design",
+      "children": [
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "parents": [
+        3,
+        5
+      ],
+      "metadata": {
+        "uuid": "96c2c604-cff7-4bf3-aa6a-34e5cb810c6f",
+        "topic_hash": "ec06d0db4cf99f5f4ef2384b78d58a0d2fe94dd9367982426c68fafe6679561a"
+      }
+    },
+    "11": {
+      "id": 11,
+      "topic": "Efficiency Gains from Centralized SEO Task Management",
+      "children": [
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "parents": [
+        5,
+        3,
+        4
+      ],
+      "metadata": {
+        "uuid": "68882822-52f2-467b-b2f2-a20ff4849dc3",
+        "topic_hash": "053369a1ca8d1eefa37247c79d0942f386c6a37cbaced080048c65e22b4e6bf3"
+      }
+    },
+    "12": {
+      "id": 12,
+      "topic": "Improved Data Consistency and Reporting Across Tools",
+      "children": [
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "parents": [
+        5,
+        0,
+        1
+      ],
+      "metadata": {
+        "uuid": "8f36bb47-4de9-4c1a-b415-ff5a61016be9",
+        "topic_hash": "5d9c70deee1d543e0c138d0eb3c368799fe4aadbb48a5a27c49e68d66c6601b6"
+      }
+    },
+    "13": {
+      "id": 13,
+      "topic": "Integration Complexities with Diverse SEO Toolsets",
+      "children": [
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "parents": [
+        5,
+        2,
+        3
+      ],
+      "metadata": {
+        "uuid": "8fd55af8-882b-45b2-9de9-113046f4e98a",
+        "topic_hash": "19adc17ac3c10edfc5d082ebc74ee1723ae4250ddb70c1d811c7a11a36e46ced"
+      }
+    },
+    "14": {
+      "id": 14,
+      "topic": "Scalability and Performance Challenges of a Unified System",
+      "children": [
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "parents": [
+        5,
+        3,
+        4
+      ],
+      "metadata": {
+        "uuid": "635491a9-467d-4c15-8ae4-0c3a9f7a784d",
+        "topic_hash": "8026cd9d92aaf76afecc1dba7d10324e6deca73b61546a74f5bef972c32224ab"
+      }
+    },
+    "15": {
+      "id": 15,
+      "topic": "User Adoption and Training Requirements for the Single Tool",
+      "children": [
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "parents": [
+        5,
+        0,
+        3
+      ],
+      "metadata": {
+        "uuid": "3905dd1a-f2fd-4dab-9343-9c4ad048aab6",
+        "topic_hash": "082f38d9c540e37f1fd202aa6cd31b5696966db984b36577522c5b0f147359e8"
+      }
+    },
+    "16": {
+      "id": 16,
+      "topic": "Defining Input Parameters for Automated Task Generation",
+      "children": [
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "parents": [
+        4,
+        1,
+        2
+      ],
+      "metadata": {
+        "uuid": "b35110af-8d7b-4392-8149-5212d1d77a35",
+        "topic_hash": "1f46a4d9f6a53677b6241db38d55aa008602e308e2c1354cda49d3b168775ceb"
+      }
+    },
+    "17": {
+      "id": 17,
+      "topic": "API Integration Strategies for SEO Tools",
+      "children": [
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "parents": [
+        4,
+        2,
+        3
+      ],
+      "metadata": {
+        "uuid": "4c43e37e-0670-4d5c-abf2-f4f5304cea38",
+        "topic_hash": "cd320a6ad849b86061219f506b8ebf4d5140430e3e83b26ad8eee0c1af8625f2"
+      }
+    },
+    "18": {
+      "id": 18,
+      "topic": "Workflow Orchestration and Task Scheduling",
+      "children": [
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "parents": [
+        4,
+        3
+      ],
+      "metadata": {
+        "uuid": "61031116-b965-430e-8d49-c5c0866c47d8",
+        "topic_hash": "d630599d8593fb1a78219d3268175fceb63bba2f8eaa2679e6f046a9e8022955"
+      }
+    },
+    "19": {
+      "id": 19,
+      "topic": "Monitoring and Reporting of Automated SEO Tasks",
+      "children": [
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "parents": [
+        4,
+        0,
+        5
+      ],
+      "metadata": {
+        "uuid": "9511236e-f1cd-4770-82a7-e10b80b7b3b5",
+        "topic_hash": "163b5c49ab85ecfeaffc149df540a39206e287dabe690acc54b438e94b84573a"
+      }
+    },
+    "20": {
+      "id": 20,
+      "topic": "Error Handling and Resiliency in Automated Workflows",
+      "children": [
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "parents": [
+        4,
+        3,
+        5
+      ],
+      "metadata": {
+        "uuid": "ba70fc93-e03a-439b-bf61-21fbe2b97a3c",
+        "topic_hash": "388c1ef416c802d943a16cc47bb972c0c7d56af9d9e863ef473bb639fe7fb24c"
+      }
+    },
+    "21": {
+      "id": 21,
+      "topic": "Detailed Breakdown of On-Page SEO Task Categories",
+      "children": [
+        106,
+        107,
+        108,
+        109,
+        110
+      ],
+      "parents": [
+        1,
+        0,
+        2
+      ],
+      "metadata": {
+        "uuid": "1b818287-1691-4657-8d39-a8a00cbf27fa",
+        "topic_hash": "f41aeeefab535eb4617bcc0a400f8599c6d2603fc977a27b49ee3d8e2d3536f3"
+      }
+    },
+    "22": {
+      "id": 22,
+      "topic": "Exploring Off-Page SEO Task Categories and Strategies",
+      "children": [
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "parents": [
+        1,
+        0,
+        2
+      ],
+      "metadata": {
+        "uuid": "78051d79-cf9c-4fc3-8e75-75c515031068",
+        "topic_hash": "4f212640785b9405c81483b95433398cfdc0590e67050dc3aace2181935700a0"
+      }
+    },
+    "23": {
+      "id": 23,
+      "topic": "Technical SEO Task Categories: Crawling, Indexing, and Performance",
+      "children": [
+        121,
+        122,
+        123,
+        124,
+        125
+      ],
+      "parents": [
+        1,
+        0,
+        2
+      ],
+      "metadata": {
+        "uuid": "e852a280-6c94-4146-b524-b08ce3fa54d4",
+        "topic_hash": "7d8927b19af264ac15c1f9ecbeec975895b3ef6fb424be4c46944c8cd5c74745"
+      }
+    },
+    "24": {
+      "id": 24,
+      "topic": "Understanding Keyword Research and Content Planning Task Categories",
+      "children": [
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "parents": [
+        1,
+        0,
+        2
+      ],
+      "metadata": {
+        "uuid": "3be9a0d9-956b-4ec7-932a-71d81bc99343",
+        "topic_hash": "a736ab9616fcfefbd63f8dc304f608f2764580df1e77b1afcfd7c67111c368ee"
+      }
+    },
+    "25": {
+      "id": 25,
+      "topic": "Emerging SEO Task Categories: Voice Search, AI, and Local SEO",
+      "children": [
+        131,
+        132,
+        133,
+        134,
+        135
+      ],
+      "parents": [
+        1,
+        0
+      ],
+      "metadata": {
+        "uuid": "f0ef9e34-4469-4c0c-b641-842b2ff2bcc0",
+        "topic_hash": "1f7b980ad02bd94f80622ec15a77195ef0b387401e81bdda3064237fd8c96a84"
+      }
+    },
+    "26": {
+      "id": 26,
+      "topic": "Keyword Research and Analysis Tool Features",
+      "children": [
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "parents": [
+        2,
+        1,
+        0
+      ],
+      "metadata": {
+        "uuid": "5fdb0ae9-79d4-488c-bacc-42decd58e89c",
+        "topic_hash": "733d498341147869a6ef13b6dd79b59ee7733433866a6f4f6402eb0a43a81bc7"
+      }
+    },
+    "27": {
+      "id": 27,
+      "topic": "On-Page SEO Optimization Functionalities",
+      "children": [
+        136,
+        137,
+        138,
+        139,
+        140
+      ],
+      "parents": [
+        2,
+        1,
+        3
+      ],
+      "metadata": {
+        "uuid": "66f1ca5c-dad0-41db-94e4-2d8768f725f2",
+        "topic_hash": "d6479be102d13b878ad5404a14125a6ce1a3537dde5630bdd5ac096b77c676be"
+      }
+    },
+    "28": {
+      "id": 28,
+      "topic": "Technical SEO Auditing and Monitoring Capabilities",
+      "children": [
+        141,
+        142,
+        143,
+        144,
+        145
+      ],
+      "parents": [
+        2,
+        1,
+        4
+      ],
+      "metadata": {
+        "uuid": "690bd66c-d866-4222-89a3-8fb05be9f6d8",
+        "topic_hash": "12fc0507e4919178cbd746f4ca29d41fe1f8ff662404d20a93a0f6c76a392f04"
+      }
+    },
+    "29": {
+      "id": 29,
+      "topic": "Backlink Analysis and Link Building Features",
+      "children": [
+        146,
+        147,
+        148,
+        149,
+        150
+      ],
+      "parents": [
+        2,
+        1,
+        0
+      ],
+      "metadata": {
+        "uuid": "8be0099c-f6ec-4084-b7f0-33bbcad4cc0d",
+        "topic_hash": "553bb980f537093c068e2f3a1f02df2122018e853f395918ea7b6cecda58aa97"
+      }
+    },
+    "30": {
+      "id": 30,
+      "topic": "Competitor Analysis and SERP Tracking Tools",
+      "children": [
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "parents": [
+        2,
+        1,
+        5
+      ],
+      "metadata": {
+        "uuid": "2a73cd24-b4fd-46cc-8d09-8300da79f71f",
+        "topic_hash": "9b059fdce17101c3f365fd9e4b651affaf7618cddc708203cef55f82b15c3752"
+      }
+    },
+    "31": {
+      "id": 31,
+      "topic": "Core Components of the Orchestration Tool",
+      "children": [],
+      "parents": [
+        6
+      ],
+      "metadata": {
+        "uuid": "dfcc3913-d132-4d70-9aa8-00a515ef3c8b",
+        "topic_hash": "4790fd042bf07e243ac358a18a3602c2d1d5bdf033fd593ddda6629ffdfa5bc0"
+      }
+    },
+    "32": {
+      "id": 32,
+      "topic": "Scalability and High Availability Design",
+      "children": [],
+      "parents": [
+        6
+      ],
+      "metadata": {
+        "uuid": "b506df86-3276-4ca8-9798-8a1c72cce3da",
+        "topic_hash": "7e8cd2e93e6cc1b71465cf6782519610647e400de55ae0cf1eb76d0c701e2d2a"
+      }
+    },
+    "33": {
+      "id": 33,
+      "topic": "Plugin and Extension Architecture",
+      "children": [],
+      "parents": [
+        6
+      ],
+      "metadata": {
+        "uuid": "2c7c15bc-ffca-4066-a3cc-a3ec7ea46abe",
+        "topic_hash": "1587d6b8741e2a310d4061221c412f1d9d2aed306a9f2d2f2030f6612988e540"
+      }
+    },
+    "34": {
+      "id": 34,
+      "topic": "Security Architecture and Mechanisms",
+      "children": [],
+      "parents": [
+        6
+      ],
+      "metadata": {
+        "uuid": "6912a46e-9ca2-4df6-b6ce-6af65448ffbf",
+        "topic_hash": "4c4c881115693a7cc1faefa8e4e110d18f4b5fb487668b361fdd05d9740e83d2"
+      }
+    },
+    "35": {
+      "id": 35,
+      "topic": "Integration with External Systems",
+      "children": [],
+      "parents": [
+        6
+      ],
+      "metadata": {
+        "uuid": "99df4c61-ccb5-4af5-be8a-1be3dbe2d2f0",
+        "topic_hash": "2ba3c131e55576d19557bbc4a4e14755279c1f512ace2e3f14201b1ff7c3ac06"
+      }
+    },
+    "36": {
+      "id": 36,
+      "topic": "Workflow Definition Languages",
+      "children": [],
+      "parents": [
+        9
+      ],
+      "metadata": {
+        "uuid": "cfb7eb71-0328-488a-a5db-c6306371d41e",
+        "topic_hash": "095c44feeebc9ae7b26af768703277b8b09399036bd8c0076b9bbc95cc978ca8"
+      }
+    },
+    "37": {
+      "id": 37,
+      "topic": "Task Orchestration Patterns",
+      "children": [],
+      "parents": [
+        9
+      ],
+      "metadata": {
+        "uuid": "1a8a367d-c3b1-4750-a1c0-f0e3dbea275d",
+        "topic_hash": "31b8f25d39808c4cf534ef4cfa2db6b4e52b8a2daf96a38bd79f0c51ab8e324f"
+      }
+    },
+    "38": {
+      "id": 38,
+      "topic": "Scheduler Algorithms",
+      "children": [],
+      "parents": [
+        9
+      ],
+      "metadata": {
+        "uuid": "b41311bd-db45-418a-a7da-d81273106e96",
+        "topic_hash": "45b529d416753a2a3729b642f2a7b76b725cf1d1b324b83571164aa7f996a144"
+      }
+    },
+    "39": {
+      "id": 39,
+      "topic": "Error Handling and Retries",
+      "children": [],
+      "parents": [
+        9
+      ],
+      "metadata": {
+        "uuid": "a4f9b558-6786-4b7f-873f-0abcbd1dca6d",
+        "topic_hash": "651ad88be4493ef3147a4adcd9c34a2c5ac102409af5c3aa82c29aabe434c699"
+      }
+    },
+    "40": {
+      "id": 40,
+      "topic": "Scalability and Distributed Execution",
+      "children": [],
+      "parents": [
+        9
+      ],
+      "metadata": {
+        "uuid": "5ddaad5c-a376-40d4-a2d1-de8181b1bbec",
+        "topic_hash": "6ffbd72f69d0e8777979e4544ddac51ef04f8fbb8cea785b10786591d562249f"
+      }
+    },
+    "41": {
+      "id": 41,
+      "topic": "Input Data Types and Validation",
+      "children": [],
+      "parents": [
+        7
+      ],
+      "metadata": {
+        "uuid": "d6bf7978-9074-4e10-b200-ee07e49e581a",
+        "topic_hash": "69c8da89afc1f2c988b562552989acb45cf80d4277741bcc9f55c33940b15d75"
+      }
+    },
+    "42": {
+      "id": 42,
+      "topic": "Output Data Structures and Serialization",
+      "children": [],
+      "parents": [
+        7
+      ],
+      "metadata": {
+        "uuid": "cfedfd67-9307-4563-a311-aebfcbe4e614",
+        "topic_hash": "ab205b62ffbf5f186766e35c06d372e444b05abd010eaf19985a694395a350f4"
+      }
+    },
+    "43": {
+      "id": 43,
+      "topic": "Parameterization and Dynamic Inputs",
+      "children": [],
+      "parents": [
+        7
+      ],
+      "metadata": {
+        "uuid": "c1a1dec3-634d-44b0-93a0-d7ef02cafb25",
+        "topic_hash": "a61d308e73f76dbf181d913f8d247681bf9ad59ae0d7ed2b14d1155084b625c0"
+      }
+    },
+    "44": {
+      "id": 44,
+      "topic": "Error Handling and Fallbacks for I/O",
+      "children": [],
+      "parents": [
+        7
+      ],
+      "metadata": {
+        "uuid": "3e61b6a2-140b-4dd2-8140-4268b2f9ef4f",
+        "topic_hash": "fe67e92fc24ffb744d59436667d654423a38eaf0e1717781dc4ca22b7aa05661"
+      }
+    },
+    "45": {
+      "id": 45,
+      "topic": "Schema Definition and Metadata for I/O",
+      "children": [],
+      "parents": [
+        7
+      ],
+      "metadata": {
+        "uuid": "d40ae7fa-2b71-407c-ae67-4db3655bc4d3",
+        "topic_hash": "213fe6c0480f0f905342a3b2e553da00af770785c0dc25a061e642b2e64bd573"
+      }
+    },
+    "46": {
+      "id": 46,
+      "topic": "Principles of UI/UX Design for Dashboards",
+      "children": [],
+      "parents": [
+        10
+      ],
+      "metadata": {
+        "uuid": "0be2ca75-d7e9-49f4-874c-10d39566c2e9",
+        "topic_hash": "d5ec56a3ae93b392308d612c1af69a741a4f24f6b6abbd5534d4c37def1846fa"
+      }
+    },
+    "47": {
+      "id": 47,
+      "topic": "Data Visualization Best Practices for Reporting",
+      "children": [],
+      "parents": [
+        10
+      ],
+      "metadata": {
+        "uuid": "5a9a4133-ad4f-4e52-8b8b-340a83f855e9",
+        "topic_hash": "a47bb9f1c463140a67b18c9c5ed17c10a7ea37c7c2b5aac2197cfeaed4302d0d"
+      }
+    },
+    "48": {
+      "id": 48,
+      "topic": "Interactive Elements and User Controls in Dashboards",
+      "children": [],
+      "parents": [
+        10
+      ],
+      "metadata": {
+        "uuid": "760256dc-ad20-4188-8919-95b7dc3cffc4",
+        "topic_hash": "600477703e1da85a5d497e08437f7aa6ed8bcfa7e42acce9e7c432e31776af28"
+      }
+    },
+    "49": {
+      "id": 49,
+      "topic": "Dashboard Layout and Information Architecture",
+      "children": [],
+      "parents": [
+        10
+      ],
+      "metadata": {
+        "uuid": "66af07d5-22e1-40f8-a4d6-cedebd4ee236",
+        "topic_hash": "b9920f468b5ffb477074995a35f850c93ee54d2256621ccdf74dbb389e359797"
+      }
+    },
+    "50": {
+      "id": 50,
+      "topic": "Accessibility and Inclusivity in UI Design",
+      "children": [],
+      "parents": [
+        10
+      ],
+      "metadata": {
+        "uuid": "b0127730-a4b3-4818-8b2f-a8de802b1f1a",
+        "topic_hash": "19019de0fbb2bed96c4ac87db65ac7fb57d2e821d7cc8c83e1c3d3f47ab74039"
+      }
+    },
+    "51": {
+      "id": 51,
+      "topic": "API Types and Protocols for Tool Integration",
+      "children": [],
+      "parents": [
+        8
+      ],
+      "metadata": {
+        "uuid": "b9fe592b-f040-498d-92c4-902276e0b33a",
+        "topic_hash": "d91f74ec81cab09d80c5c9a6be166a3e721ddf59745439705257cd1304fd8a5a"
+      }
+    },
+    "52": {
+      "id": 52,
+      "topic": "Pre-built Connectors and iPaaS Solutions",
+      "children": [],
+      "parents": [
+        8
+      ],
+      "metadata": {
+        "uuid": "c95b3f04-2d8c-4d5c-a5c8-88abb0e282ad",
+        "topic_hash": "43af78eab812afe6590fa10e1f08956fa51135f0e675f795e5e93abc34fe56dc"
+      }
+    },
+    "53": {
+      "id": 53,
+      "topic": "Security and Authentication for Integration APIs",
+      "children": [],
+      "parents": [
+        8
+      ],
+      "metadata": {
+        "uuid": "ba13aa66-952b-44ed-98ed-312a01b8ca3e",
+        "topic_hash": "1fa691796b666b794b1cac2cc7185e69c1c8cbe08551daa86a0e68a07bb3b123"
+      }
+    },
+    "54": {
+      "id": 54,
+      "topic": "Data Transformation and Mapping in Integrations",
+      "children": [],
+      "parents": [
+        8
+      ],
+      "metadata": {
+        "uuid": "9162ac3e-41ac-40bf-86eb-1d575f02a4e8",
+        "topic_hash": "4ab9699037ca186c0b7f9ae129a8b6a93ae537da4289e73c8a78be815761d7b3"
+      }
+    },
+    "55": {
+      "id": 55,
+      "topic": "Monitoring, Logging, and Error Handling for API Integrations",
+      "children": [],
+      "parents": [
+        8
+      ],
+      "metadata": {
+        "uuid": "91caa72c-d24a-4df3-a7c8-79c71a9ce416",
+        "topic_hash": "4cbc6fb6a310d52565855fcb82fdae6524cb908fba86c84189a32ca590cbd699"
+      }
+    },
+    "56": {
+      "id": 56,
+      "topic": "Streamlined Workflow Automation in Centralized SEO",
+      "children": [],
+      "parents": [
+        11
+      ],
+      "metadata": {
+        "uuid": "75124cab-b78e-440e-98db-748e8e869910",
+        "topic_hash": "4e7cf9abefc99e2d5dfdde0cbbf6fa6be836c06531675398c838eddfc96255e8"
+      }
+    },
+    "57": {
+      "id": 57,
+      "topic": "Improved Team Collaboration and Communication in SEO",
+      "children": [],
+      "parents": [
+        11
+      ],
+      "metadata": {
+        "uuid": "5a950b56-957b-45eb-8a95-6619e03b0dd4",
+        "topic_hash": "045689b979c456f42f153fe7ff9b6833d2f4755712506def3a86fca11c046506"
+      }
+    },
+    "58": {
+      "id": 58,
+      "topic": "Enhanced Data Accessibility and Reporting for SEO Performance",
+      "children": [],
+      "parents": [
+        11
+      ],
+      "metadata": {
+        "uuid": "7c71d5db-1b86-4afe-a613-0d36e1b22201",
+        "topic_hash": "06b1bd1976bd36b5150e46e6ebe1365a8757e8eecba7a36615673a077389ba79"
+      }
+    },
+    "59": {
+      "id": 59,
+      "topic": "Reduced Redundancy and Cost Savings in SEO Operations",
+      "children": [],
+      "parents": [
+        11
+      ],
+      "metadata": {
+        "uuid": "a946504a-aa2e-4a85-a974-9c0bd2a25bc6",
+        "topic_hash": "a450d8a2d0ac8bf04feabaf5ecf236776b3580be774de7e7bf135a5634de1e11"
+      }
+    },
+    "60": {
+      "id": 60,
+      "topic": "Scalability of SEO Initiatives with Centralized Management",
+      "children": [],
+      "parents": [
+        11
+      ],
+      "metadata": {
+        "uuid": "ad5e067c-a11e-4c2e-97e5-3669a565ece4",
+        "topic_hash": "6ba14a872cf71d6b70f5bef992817014b79013c6bf90b91517b6f15c390a744f"
+      }
+    },
+    "61": {
+      "id": 61,
+      "topic": "Standardized Data Models for Interoperability",
+      "children": [],
+      "parents": [
+        12
+      ],
+      "metadata": {
+        "uuid": "b08502b1-49e9-406a-9a8d-50bf7f9cd8e5",
+        "topic_hash": "10da9a3738094e7fcea797118b655a21af738226537c8c387a980763ceab8694"
+      }
+    },
+    "62": {
+      "id": 62,
+      "topic": "Automated Data Synchronization Mechanisms",
+      "children": [],
+      "parents": [
+        12
+      ],
+      "metadata": {
+        "uuid": "296f3dd1-5219-4960-8e28-1da7e93f0354",
+        "topic_hash": "8b558a23f13923bbe503163a34a2fcb8611b71b5f9219f9b7d6a683cf843d0f2"
+      }
+    },
+    "63": {
+      "id": 63,
+      "topic": "Centralized Reporting and Dashboard Solutions",
+      "children": [],
+      "parents": [
+        12
+      ],
+      "metadata": {
+        "uuid": "481a4133-e843-401e-a516-0287b562f51d",
+        "topic_hash": "e3d4ae9c8715233a3a3ce1ff94dbfa40cd5b1da0aabb2c51293eb4ea9458edf9"
+      }
+    },
+    "64": {
+      "id": 64,
+      "topic": "Data Validation and Quality Assurance Protocols",
+      "children": [],
+      "parents": [
+        12
+      ],
+      "metadata": {
+        "uuid": "19953660-fca8-45b7-9fcb-1da64123bc3e",
+        "topic_hash": "8454712b74e5f8e04abae0c5925c5a574b935a38fb5d24ac4022d00926ca4fa6"
+      }
+    },
+    "65": {
+      "id": 65,
+      "topic": "Integration Strategies for Disparate Data Sources",
+      "children": [],
+      "parents": [
+        12
+      ],
+      "metadata": {
+        "uuid": "46edf7a3-c0e8-4111-8283-22740371f8b1",
+        "topic_hash": "2f91bdb343c2a88a75d0e18959e231c0f829af481a74ff7381822407af3d53f4"
+      }
+    },
+    "66": {
+      "id": 66,
+      "topic": "Data Consistency in Distributed Unified Systems",
+      "children": [],
+      "parents": [
+        14
+      ],
+      "metadata": {
+        "uuid": "e38fe0f8-cc20-4a78-a0df-7bdb949e11ae",
+        "topic_hash": "dd93bdcddcd59da7e16dc338f64158e7c265ea729f81a46038b1f4e5a67a3797"
+      }
+    },
+    "67": {
+      "id": 67,
+      "topic": "Latency and Throughput Optimization Strategies",
+      "children": [],
+      "parents": [
+        14
+      ],
+      "metadata": {
+        "uuid": "9a0b9315-445a-440e-bf18-3ed4317c9bcf",
+        "topic_hash": "da64fb4461e687e8621990423731eb458d80f04297516db4322a993749b7071a"
+      }
+    },
+    "68": {
+      "id": 68,
+      "topic": "Resource Contention and Deadlock Management",
+      "children": [],
+      "parents": [
+        14
+      ],
+      "metadata": {
+        "uuid": "f09c769d-a818-499e-bf39-1db59ab9a811",
+        "topic_hash": "564c43e091852d492c0a92a7ffc632d618be8071f7ecf0555339769b30b7df45"
+      }
+    },
+    "69": {
+      "id": 69,
+      "topic": "Fault Tolerance and Resilience in Scalable Architectures",
+      "children": [],
+      "parents": [
+        14
+      ],
+      "metadata": {
+        "uuid": "1815aeea-b2d4-4f70-b690-e70fd9c63169",
+        "topic_hash": "9043b9c64fb8df2fb4435d1c34a7d248b6d8c6ee8082a3351b8d0453b5ec61c2"
+      }
+    },
+    "70": {
+      "id": 70,
+      "topic": "Monitoring and Profiling Complex Unified Systems",
+      "children": [],
+      "parents": [
+        14
+      ],
+      "metadata": {
+        "uuid": "ac9553d6-00d6-4b6b-a724-a590bfbeb968",
+        "topic_hash": "e5baaff2621dbd8c95cfd8a4b7a9a4f154bb63299f11bc5cb7778b72b159c78e"
+      }
+    },
+    "71": {
+      "id": 71,
+      "topic": "Training Program Development for the Single Tool",
+      "children": [],
+      "parents": [
+        15
+      ],
+      "metadata": {
+        "uuid": "5010424f-717d-496a-9c47-5c9f37d478c6",
+        "topic_hash": "651460d1ecc96adead781f1d200e13255c1f288f0d1560e2c82efac2c46436ae"
+      }
+    },
+    "72": {
+      "id": 72,
+      "topic": "User Onboarding Strategies and Best Practices",
+      "children": [],
+      "parents": [
+        15
+      ],
+      "metadata": {
+        "uuid": "c06666bb-29ff-4a56-b137-d8f51c1a6632",
+        "topic_hash": "031f2cd4a774dc5a1e90c4f919b005df662621d6bca2dfb88c346e58605a1c8e"
+      }
+    },
+    "73": {
+      "id": 73,
+      "topic": "Change Management for Successful Tool Adoption",
+      "children": [],
+      "parents": [
+        15
+      ],
+      "metadata": {
+        "uuid": "7777c827-3c30-490f-ab03-d108fe952330",
+        "topic_hash": "0a93e3121c392374e65e09a8decfda9e14728f87eecfe31e65a7e1c69e1da520"
+      }
+    },
+    "74": {
+      "id": 74,
+      "topic": "Measuring User Adoption and Training Effectiveness",
+      "children": [],
+      "parents": [
+        15
+      ],
+      "metadata": {
+        "uuid": "3f3855de-70e2-49d6-af6a-21971e558235",
+        "topic_hash": "ad79c30450852654d417ecf3808032248edf76c80f457e02dba54d7f668df967"
+      }
+    },
+    "75": {
+      "id": 75,
+      "topic": "Ongoing Support and Continuous Learning Initiatives",
+      "children": [],
+      "parents": [
+        15
+      ],
+      "metadata": {
+        "uuid": "b12ba5cb-41e4-45ab-9e76-f393d97db633",
+        "topic_hash": "ffa4536835cb0623585ecd060023d1d2a8852751b0b4a641105ed333fa0353f8"
+      }
+    },
+    "76": {
+      "id": 76,
+      "topic": "Data Inconsistencies Across Diverse SEO Tools",
+      "children": [],
+      "parents": [
+        13
+      ],
+      "metadata": {
+        "uuid": "83d994e1-c17f-42f2-89c3-e45f5ae32f22",
+        "topic_hash": "978280b5a5ea69d35178569db790a80c583fc8f311ed81bf22f93733bd04ffce"
+      }
+    },
+    "77": {
+      "id": 77,
+      "topic": "API Limitations and Interoperability Challenges",
+      "children": [],
+      "parents": [
+        13
+      ],
+      "metadata": {
+        "uuid": "64c4c4e2-cf55-430b-bed7-dccb56e6de75",
+        "topic_hash": "e107952acb5f59eeb862d185c35f3226d36d7495c247ebee2b9a6e76752108f3"
+      }
+    },
+    "78": {
+      "id": 78,
+      "topic": "Manual Data Consolidation and Workflow Disruptions",
+      "children": [],
+      "parents": [
+        13
+      ],
+      "metadata": {
+        "uuid": "240daf16-84dd-4006-b75b-5b43577efdf4",
+        "topic_hash": "459cc1ef35f935ab6b298d7491a162a93bcf9aeefd58f6c49bdb78c2baacdc87"
+      }
+    },
+    "79": {
+      "id": 79,
+      "topic": "Redundant Features and Cost Overlaps in Toolsets",
+      "children": [],
+      "parents": [
+        13
+      ],
+      "metadata": {
+        "uuid": "0684f96f-a870-4568-a539-221a84e2ccd6",
+        "topic_hash": "6a4a774e3f398a275ee706a453ec1b01346dc041c8f5d4630dd1f781959d0ac9"
+      }
+    },
+    "80": {
+      "id": 80,
+      "topic": "Challenges in Unified SEO Reporting and Dashboards",
+      "children": [],
+      "parents": [
+        13
+      ],
+      "metadata": {
+        "uuid": "74177d2d-91cb-4dda-b5b9-a10c0e4ff46b",
+        "topic_hash": "433b577fdd549e5f00b21ea66296ad7aa2e9324b3ae5c67a1d455a78bdda77cb"
+      }
+    },
+    "81": {
+      "id": 81,
+      "topic": "Concepts of Workflow Orchestration",
+      "children": [],
+      "parents": [
+        18
+      ],
+      "metadata": {
+        "uuid": "b06a6786-1aa4-4619-8a8c-fd3c158148a0",
+        "topic_hash": "a32f65ba733ba645e5e834baea63c65cf1cf5a800cb7572b5a01ecd8617d4557"
+      }
+    },
+    "82": {
+      "id": 82,
+      "topic": "Task Scheduling Algorithms and Strategies",
+      "children": [],
+      "parents": [
+        18
+      ],
+      "metadata": {
+        "uuid": "0894f8e1-112d-4cd9-9158-13cc50630169",
+        "topic_hash": "080e0025e1bfd00d146eedecc3281297463f343ec4c3d092119ef83fb79e2390"
+      }
+    },
+    "83": {
+      "id": 83,
+      "topic": "Workflow Management Systems (WfMS) Overview",
+      "children": [],
+      "parents": [
+        18
+      ],
+      "metadata": {
+        "uuid": "0df4a4e3-5dd8-489c-913f-6dd259be6860",
+        "topic_hash": "58de75a004d63308cc7a0dfb5b83fe066dd1037ed50b1a62db2cb1bd774f8a6c"
+      }
+    },
+    "84": {
+      "id": 84,
+      "topic": "Error Handling and Fault Tolerance in Workflows",
+      "children": [],
+      "parents": [
+        18
+      ],
+      "metadata": {
+        "uuid": "70816827-e5e4-4c21-b628-01011afbf934",
+        "topic_hash": "9648159fc2ded095b5d9b817b2ae6ead21d877d2784f1d4e80476ec936251f3e"
+      }
+    },
+    "85": {
+      "id": 85,
+      "topic": "Monitoring and Logging for Orchestrated Workflows",
+      "children": [],
+      "parents": [
+        18
+      ],
+      "metadata": {
+        "uuid": "5992dca4-15c3-4e7a-994c-343b443d6971",
+        "topic_hash": "1645b6f5a10508408b851ae54b6914812383b672bd7deb6bd4275d9e12e7e9fd"
+      }
+    },
+    "86": {
+      "id": 86,
+      "topic": "Types of Input Parameters (e.g., text, numerical, categorical)",
+      "children": [],
+      "parents": [
+        16
+      ],
+      "metadata": {
+        "uuid": "a2dd792e-bed7-4764-8edb-4dad4dd78595",
+        "topic_hash": "0859c0f084a15cfcd21878e3de21e871c2f3cd0939a6aaf5727e0c4dfca7abe6"
+      }
+    },
+    "87": {
+      "id": 87,
+      "topic": "Schema Definition for Input Parameters",
+      "children": [],
+      "parents": [
+        16
+      ],
+      "metadata": {
+        "uuid": "3da028a9-bd17-4064-b024-a3996b56c7a2",
+        "topic_hash": "f1672e4c6715ebda6f699bbf1bdc43f27c75a0453c8d00aad63bb9587cf11293"
+      }
+    },
+    "88": {
+      "id": 88,
+      "topic": "Validation and Constraints for Input Parameters",
+      "children": [],
+      "parents": [
+        16
+      ],
+      "metadata": {
+        "uuid": "70b78cfe-ea42-4345-a63c-b741653a7281",
+        "topic_hash": "c9a6a681c7555fd7e6e237c60f1c52f763a881f745083cae399f0713f0c18185"
+      }
+    },
+    "89": {
+      "id": 89,
+      "topic": "Impact of Input Parameters on Generated Task Complexity",
+      "children": [],
+      "parents": [
+        16
+      ],
+      "metadata": {
+        "uuid": "209abcad-3734-4d8c-9afa-8dd207fb9891",
+        "topic_hash": "32c4ebe0a82f9a6699503dc4d658e66fcaf8ddd1cf61499902206c6cf1026c2a"
+      }
+    },
+    "90": {
+      "id": 90,
+      "topic": "Methods for Dynamic Input Parameter Generation",
+      "children": [],
+      "parents": [
+        16
+      ],
+      "metadata": {
+        "uuid": "735a8b55-7ab6-469f-a41e-7c61d4a0c153",
+        "topic_hash": "d8719051b2757f43ede711fe64e253a3722afdf8e0cd6fde7d5bba0717702fe2"
+      }
+    },
+    "91": {
+      "id": 91,
+      "topic": "Benefits of API Integration for SEO Automation",
+      "children": [],
+      "parents": [
+        17
+      ],
+      "metadata": {
+        "uuid": "666c0575-2cfe-4b04-b877-5f1f2c7bf9f6",
+        "topic_hash": "0eb8e96abfac1a5fc67ced3c3111368236eec7a0a69a9b713c54b25172cf62e9"
+      }
+    },
+    "92": {
+      "id": 92,
+      "topic": "Common SEO Tool APIs and Their Capabilities",
+      "children": [],
+      "parents": [
+        17
+      ],
+      "metadata": {
+        "uuid": "68417a09-9122-44ea-9bd4-b63bb333125a",
+        "topic_hash": "6f8d3076763b8a255d091f9b60d97cb72dd08f706bcaf5748a40ffbc88a77261"
+      }
+    },
+    "93": {
+      "id": 93,
+      "topic": "Technical Challenges in API Integration for SEO Data",
+      "children": [],
+      "parents": [
+        17
+      ],
+      "metadata": {
+        "uuid": "2915609c-a6f9-452b-87c0-19739db43538",
+        "topic_hash": "9718900310b6c6eba9aec4bb61ed124d8552ff98a9bdc4d7d130d80343f21d19"
+      }
+    },
+    "94": {
+      "id": 94,
+      "topic": "Advanced Use Cases for Integrated SEO Data",
+      "children": [],
+      "parents": [
+        17
+      ],
+      "metadata": {
+        "uuid": "e89142a5-e67b-4226-8ff9-d5d1abc240ce",
+        "topic_hash": "5d936247d24ab276b832dcb200f7d65acedb69d071dae4a11a422c80f80589ad"
+      }
+    },
+    "95": {
+      "id": 95,
+      "topic": "Best Practices for Secure API Key Management in SEO Tools",
+      "children": [],
+      "parents": [
+        17
+      ],
+      "metadata": {
+        "uuid": "af7e86b0-c58e-4f61-9f38-f0c0cb702aa2",
+        "topic_hash": "a3e99d57aab8125e7c62076be16b9fff94140fced5009d444d19c30b28db8d2c"
+      }
+    },
+    "96": {
+      "id": 96,
+      "topic": "Defining Key Performance Indicators (KPIs) for Automated SEO",
+      "children": [],
+      "parents": [
+        19
+      ],
+      "metadata": {
+        "uuid": "9ee82cc5-0bcd-43b1-a6d7-70ef5df870bc",
+        "topic_hash": "dbc6825be619655a66c2b82f68f0b919c847931a5bcb289a90f965ea77334de2"
+      }
+    },
+    "97": {
+      "id": 97,
+      "topic": "Tools and Platforms for Automated SEO Monitoring",
+      "children": [],
+      "parents": [
+        19
+      ],
+      "metadata": {
+        "uuid": "c4214981-aaf4-42e1-84d5-0ad617a0bcb9",
+        "topic_hash": "535373a05862ac5607264ac03f4621efc8dc54b9867e46867e5f2573c55515ae"
+      }
+    },
+    "98": {
+      "id": 98,
+      "topic": "Automated Report Generation for SEO Performance",
+      "children": [],
+      "parents": [
+        19
+      ],
+      "metadata": {
+        "uuid": "bbed762d-5e39-4897-aaeb-1ce81006569b",
+        "topic_hash": "4ca3472b976f70a3780891abbb44f41c75ce67bee32373223742a05dd795baba"
+      }
+    },
+    "99": {
+      "id": 99,
+      "topic": "Alerts and Notifications for SEO Anomalies",
+      "children": [],
+      "parents": [
+        19
+      ],
+      "metadata": {
+        "uuid": "84285e20-87e3-4e22-94b0-a16247af1e1b",
+        "topic_hash": "3e1d47348eebc421c7e2b5b22e3bff78e4fae1e1db6cdfbcd1cdf5d931300d13"
+      }
+    },
+    "100": {
+      "id": 100,
+      "topic": "Data Visualization and Dashboards for SEO Reporting",
+      "children": [],
+      "parents": [
+        19
+      ],
+      "metadata": {
+        "uuid": "6e517e8d-b8c5-4936-8a31-06a8c3c81526",
+        "topic_hash": "f87824a3a8a289e3b603fe0d22f68be6d941716edbb9e861a557f31175cf4a89"
+      }
+    },
+    "101": {
+      "id": 101,
+      "topic": "Types of Errors in Automated Workflows",
+      "children": [],
+      "parents": [
+        20
+      ],
+      "metadata": {
+        "uuid": "d16b159b-1914-41e5-9254-70870b70dd01",
+        "topic_hash": "13dd49268f396a836d09fbcf5eb53f21a5c3deb75d65debd3d25a349322a50b9"
+      }
+    },
+    "102": {
+      "id": 102,
+      "topic": "Error Detection and Logging Strategies",
+      "children": [],
+      "parents": [
+        20
+      ],
+      "metadata": {
+        "uuid": "60cc9425-fe41-4441-bce1-8ba02d125cfe",
+        "topic_hash": "0e7c9e6144c860e579adc0fc8a520869c2c2ffad6be8f36cc22e6df1f339ed49"
+      }
+    },
+    "103": {
+      "id": 103,
+      "topic": "Automated Error Recovery and Retries",
+      "children": [],
+      "parents": [
+        20
+      ],
+      "metadata": {
+        "uuid": "9ac72064-7eb6-4c9f-97ff-be8d8af0ab7a",
+        "topic_hash": "04619000765b8b8bb9f445349e17fcc967250c3771dec9b188992ae4c5ff53cc"
+      }
+    },
+    "104": {
+      "id": 104,
+      "topic": "Implementing Resiliency Patterns in Workflows",
+      "children": [],
+      "parents": [
+        20
+      ],
+      "metadata": {
+        "uuid": "1e793df3-ce62-46f8-96b3-5e3e1c35217b",
+        "topic_hash": "9419996c97b71aa008a0e6c4204847b27f57f094ebebe1476407f820f490b92a"
+      }
+    },
+    "105": {
+      "id": 105,
+      "topic": "Monitoring and Alerting for Workflow Health",
+      "children": [],
+      "parents": [
+        20
+      ],
+      "metadata": {
+        "uuid": "e90a7e98-f546-4c33-be65-ef2fd11b1e59",
+        "topic_hash": "11224b37c7f93a822c30e33534bbce9493984d89679fea09680e0569da38e2af"
+      }
+    },
+    "106": {
+      "id": 106,
+      "topic": "Keyword Research & Placement for On-Page SEO",
+      "children": [],
+      "parents": [
+        21
+      ],
+      "metadata": {
+        "uuid": "5e0eb0d4-e2e9-4a97-8ad3-ecf0a492a6d0",
+        "topic_hash": "69717eb815206d26529a578bbd624c5c29ebb12a3d9abf66e739f54eb1bcf809"
+      }
+    },
+    "107": {
+      "id": 107,
+      "topic": "Content Optimization (Text, Images, Video)",
+      "children": [],
+      "parents": [
+        21
+      ],
+      "metadata": {
+        "uuid": "1f65c08b-b2b8-4193-b916-c4cef277069f",
+        "topic_hash": "6cf65967e13c9f81b9af024c8c9da267b26bd285705409fc4d09d71576e53554"
+      }
+    },
+    "108": {
+      "id": 108,
+      "topic": "Technical On-Page SEO Elements (Meta Tags, Headings, URL Structure)",
+      "children": [],
+      "parents": [
+        21
+      ],
+      "metadata": {
+        "uuid": "e363042e-6d11-44cb-a36d-6c62704744fe",
+        "topic_hash": "c652d6bb2ea224d1b0e76ffa655a20840d69e15d9a40c2cda0add1ed11986423"
+      }
+    },
+    "109": {
+      "id": 109,
+      "topic": "User Experience (UX) & Engagement Signals",
+      "children": [],
+      "parents": [
+        21
+      ],
+      "metadata": {
+        "uuid": "99a1c0cc-d353-4475-82da-e14861d62887",
+        "topic_hash": "5e5b3a8b89cd8d03633e61edef68d3c5308c89a1da866e2a65c1427ca4e13b33"
+      }
+    },
+    "110": {
+      "id": 110,
+      "topic": "Internal Linking Strategies & Best Practices",
+      "children": [],
+      "parents": [
+        21
+      ],
+      "metadata": {
+        "uuid": "58a37b14-de5a-4c4a-94be-6d7e3acf6fde",
+        "topic_hash": "84cc48eed0926d904c8ddd54705cc86102adeed1d12e7b2a56c02ef0ca82465e"
+      }
+    },
+    "111": {
+      "id": 111,
+      "topic": "Link Building Strategies for Off-Page SEO",
+      "children": [],
+      "parents": [
+        22
+      ],
+      "metadata": {
+        "uuid": "f489e6ee-9a5e-450d-8014-68e8a0b5122f",
+        "topic_hash": "7bfe178cd7785bf16cdf5da0739d0a5b4995a1a8d49dc840e2de01ee314f7dc5"
+      }
+    },
+    "112": {
+      "id": 112,
+      "topic": "Social Media Marketing's Role in Off-Page SEO",
+      "children": [],
+      "parents": [
+        22
+      ],
+      "metadata": {
+        "uuid": "de95219b-b402-4a7a-b7d2-fe0feff23a32",
+        "topic_hash": "a60442ad42b2839b6a273c8dd9823d6e1faec61289fc071321fef72daa693b88"
+      }
+    },
+    "113": {
+      "id": 113,
+      "topic": "Local SEO: Citations, Reviews, and Directories",
+      "children": [],
+      "parents": [
+        22
+      ],
+      "metadata": {
+        "uuid": "81b00932-02f4-40e2-8a92-83ab87c1d2c7",
+        "topic_hash": "55f0786d1c709b289fc21fc2bd7af9b4406bd77e38d55bdc62e284323569e351"
+      }
+    },
+    "114": {
+      "id": 114,
+      "topic": "Content Marketing and Syndication for Off-Page SEO",
+      "children": [],
+      "parents": [
+        22
+      ],
+      "metadata": {
+        "uuid": "51af7677-cc5e-4b8e-8715-6834edd8fc8f",
+        "topic_hash": "dfcc76c33de427e793abce749f627aabfc33c5c7384e25e91ebf4d6fd11977d1"
+      }
+    },
+    "115": {
+      "id": 115,
+      "topic": "Influencer Outreach and Partnerships in Off-Page SEO",
+      "children": [],
+      "parents": [
+        22
+      ],
+      "metadata": {
+        "uuid": "5d8a71c0-7722-492c-bb5f-175464314936",
+        "topic_hash": "fa0119f8b1dcd0431f35a57fabaa6be1c4d8594552b7a04ad44cef8544611069"
+      }
+    },
+    "116": {
+      "id": 116,
+      "topic": "Foundational Principles of Keyword Research",
+      "children": [],
+      "parents": [
+        24
+      ],
+      "metadata": {
+        "uuid": "daa030a3-d5c7-4243-9708-9881c92a11de",
+        "topic_hash": "41d702459125157f7d617ffaaca18b65f221f9d4908f30ac58f93645ec5bdd38"
+      }
+    },
+    "117": {
+      "id": 117,
+      "topic": "Categorizing Keywords: Types and Intent",
+      "children": [],
+      "parents": [
+        24
+      ],
+      "metadata": {
+        "uuid": "1027861d-957c-4607-a6fa-b7248925c467",
+        "topic_hash": "e5f5660119ef504c390881d3ae796073853b9e53f7128dd6812efebb1d4d60c4"
+      }
+    },
+    "118": {
+      "id": 118,
+      "topic": "Key Tools and Methodologies for Keyword Discovery",
+      "children": [],
+      "parents": [
+        24
+      ],
+      "metadata": {
+        "uuid": "900a18bb-17d4-4d1c-b486-1fbd45ff9740",
+        "topic_hash": "842a3eaa8e2ff94274c804c9026e043cdc608d29df0274da6ed4ff498e112fed"
+      }
+    },
+    "119": {
+      "id": 119,
+      "topic": "Integrating Keyword Research into Content Strategy",
+      "children": [],
+      "parents": [
+        24
+      ],
+      "metadata": {
+        "uuid": "f26983c2-2626-4e96-9fcb-575622e7c7bc",
+        "topic_hash": "e93c72f795c146730b3a952619e1498dcd1992e190306f578b1b00e28972144c"
+      }
+    },
+    "120": {
+      "id": 120,
+      "topic": "Performance Metrics for Keyword and Content Success",
+      "children": [],
+      "parents": [
+        24
+      ],
+      "metadata": {
+        "uuid": "de2126b2-668e-4d2d-8a59-643e359f8f35",
+        "topic_hash": "c38740ec3e7236cc2e5ec533206632b4a11e253fcda39b2066783617e8bf6c17"
+      }
+    },
+    "121": {
+      "id": 121,
+      "topic": "Crawling Budget Optimization",
+      "children": [],
+      "parents": [
+        23
+      ],
+      "metadata": {
+        "uuid": "15339be9-40b4-4193-993a-9bc864ce264f",
+        "topic_hash": "ca56ba3036cd58fbfe49a97b17416dd0747314b51c2f9641097129e7d3ea3244"
+      }
+    },
+    "122": {
+      "id": 122,
+      "topic": "Robots.txt and Crawl Directives",
+      "children": [],
+      "parents": [
+        23
+      ],
+      "metadata": {
+        "uuid": "14921b14-8bc5-4898-8a6b-b19e97718685",
+        "topic_hash": "e5e4d6d75fe274c51100822624c6e4b068b10a550ca533613cc56294258771de"
+      }
+    },
+    "123": {
+      "id": 123,
+      "topic": "XML Sitemaps for Indexing",
+      "children": [],
+      "parents": [
+        23
+      ],
+      "metadata": {
+        "uuid": "54511960-1b58-444a-88d1-d3c6e0d07aaa",
+        "topic_hash": "6a82fcf13652692b2f1f0d5ea5efa73df6ef38aecceeb3984b0fe9455c8d559e"
+      }
+    },
+    "124": {
+      "id": 124,
+      "topic": "Canonical Tags and Duplicate Content",
+      "children": [],
+      "parents": [
+        23
+      ],
+      "metadata": {
+        "uuid": "c2107945-a0af-48e1-8c58-771f751552fb",
+        "topic_hash": "337a626f6e337bfda6b550e74f53630253ac6a521bf3c76d2671b31ea9a2fbab"
+      }
+    },
+    "125": {
+      "id": 125,
+      "topic": "Core Web Vitals and Page Speed",
+      "children": [],
+      "parents": [
+        23
+      ],
+      "metadata": {
+        "uuid": "c108b110-3e38-4503-bbc9-0bd8d4a34aee",
+        "topic_hash": "054d9292d06d30ca0f338086bf2adfce5f23d6f184e96e6f51ab0898b3d03173"
+      }
+    },
+    "126": {
+      "id": 126,
+      "topic": "Keyword Suggestion and Discovery",
+      "children": [],
+      "parents": [
+        26
+      ],
+      "metadata": {
+        "uuid": "d3d8ba4d-7463-4f19-9559-014afad28e36",
+        "topic_hash": "d5622dc66a80eb7c867edeb2c7201ec15e27961b8670e3f70a4b47bb3b3c2b42"
+      }
+    },
+    "127": {
+      "id": 127,
+      "topic": "Search Volume and Trend Analysis",
+      "children": [],
+      "parents": [
+        26
+      ],
+      "metadata": {
+        "uuid": "b61b7272-c907-4404-a988-9dccac2f21f3",
+        "topic_hash": "e6f0814ff29740cb4e9015d2b84ee0a0b5e8b88c141c2ec8bbb4f289d0c76a14"
+      }
+    },
+    "128": {
+      "id": 128,
+      "topic": "Competitor Keyword Analysis",
+      "children": [],
+      "parents": [
+        26
+      ],
+      "metadata": {
+        "uuid": "6fb6274d-13c7-48a3-97b9-8122c182d70b",
+        "topic_hash": "d39b52667071c80188c9bc98f5eaad8f404850348da8f08d2d309c32bba4bef1"
+      }
+    },
+    "129": {
+      "id": 129,
+      "topic": "Keyword Difficulty and SERP Analysis",
+      "children": [],
+      "parents": [
+        26
+      ],
+      "metadata": {
+        "uuid": "80f5ba5b-8290-4f0a-be68-c54f062cc05b",
+        "topic_hash": "1898e85a6ca8c6f085aa36fde1800458fd2b04326e0c3eb305e970ef00d73a31"
+      }
+    },
+    "130": {
+      "id": 130,
+      "topic": "Keyword Organization and List Management",
+      "children": [],
+      "parents": [
+        26
+      ],
+      "metadata": {
+        "uuid": "168f1099-63f3-4e00-b5cd-38282b9197ce",
+        "topic_hash": "0d66b10ed4c889e6bda58a20a081bfd6e6d5ecbbebafb0a6d20e3ba75f6e5802"
+      }
+    },
+    "131": {
+      "id": 131,
+      "topic": "Optimizing for Voice Search Queries",
+      "children": [],
+      "parents": [
+        25
+      ],
+      "metadata": {
+        "uuid": "edb357aa-a96e-453e-87ed-01aa352c19aa",
+        "topic_hash": "089da85bf0ac6dc66dd423a1de1526d643d353169a9179103174168556954ec1"
+      }
+    },
+    "132": {
+      "id": 132,
+      "topic": "AI-Powered Content Generation and SEO Analysis",
+      "children": [],
+      "parents": [
+        25
+      ],
+      "metadata": {
+        "uuid": "e3881f49-1012-4cac-b467-83709acdf70e",
+        "topic_hash": "3c836d19dde0004e926480b15d94c8f72f528e1a3524835ee9c931848fad5ee9"
+      }
+    },
+    "133": {
+      "id": 133,
+      "topic": "Advanced Local SEO Tactics for Businesses",
+      "children": [],
+      "parents": [
+        25
+      ],
+      "metadata": {
+        "uuid": "1aed4ca4-b97e-48c4-b49c-7cf15246e01b",
+        "topic_hash": "9079f54ab0c8bfb9f8641d9f814af72bf92f44028e14c6bd08a5220571933a5b"
+      }
+    },
+    "134": {
+      "id": 134,
+      "topic": "The Interplay of Voice Search and Local SEO",
+      "children": [],
+      "parents": [
+        25
+      ],
+      "metadata": {
+        "uuid": "5c2c9dcb-feb2-4caf-b83d-04dd1e0521ee",
+        "topic_hash": "5e266c81aeaca7dd21bb60ab7032e2dc2d48ac2d3af09468e9e6e86eefa38469"
+      }
+    },
+    "135": {
+      "id": 135,
+      "topic": "Future Trends in AI and Predictive SEO",
+      "children": [],
+      "parents": [
+        25
+      ],
+      "metadata": {
+        "uuid": "aee32d92-10ed-4f97-a225-711afc568968",
+        "topic_hash": "6543a9172fc88f320e9e13baadc3896f22347a4d8d3b490f18acfb8c7eb32096"
+      }
+    },
+    "136": {
+      "id": 136,
+      "topic": "Keyword Research and Placement",
+      "children": [],
+      "parents": [
+        27
+      ],
+      "metadata": {
+        "uuid": "3cc02022-5713-40e6-aeb0-c95957315977",
+        "topic_hash": "69d4b30682237af731635bd423a62c64ac344ab543d78ae9aac977b6ae208154"
+      }
+    },
+    "137": {
+      "id": 137,
+      "topic": "Meta Tags Optimization (Title & Description)",
+      "children": [],
+      "parents": [
+        27
+      ],
+      "metadata": {
+        "uuid": "fec16e10-2ca9-443f-99f8-d0de116251a8",
+        "topic_hash": "2d7f5e1a31032ad70df9b3878f97c7fddad68d563b036ec22fbba72aed95f429"
+      }
+    },
+    "138": {
+      "id": 138,
+      "topic": "Content Quality and Structure",
+      "children": [],
+      "parents": [
+        27
+      ],
+      "metadata": {
+        "uuid": "b21cf481-5697-4ddf-87fd-9ed6f00095f9",
+        "topic_hash": "e5f43794278df6f206cfc11143c54cd467c833468f6539a25d817caebdeb46f3"
+      }
+    },
+    "139": {
+      "id": 139,
+      "topic": "Image Optimization (Alt Text & Compression)",
+      "children": [],
+      "parents": [
+        27
+      ],
+      "metadata": {
+        "uuid": "e3c449df-d76b-43d1-9c49-d7af9b487569",
+        "topic_hash": "d8582c44f93de0a7bdafedef7701af719edf2b43e87668f3c01ae8556d521bb8"
+      }
+    },
+    "140": {
+      "id": 140,
+      "topic": "URL Structure Optimization",
+      "children": [],
+      "parents": [
+        27
+      ],
+      "metadata": {
+        "uuid": "2d8dfd96-c790-4ba8-a560-81061502a13d",
+        "topic_hash": "3f59bd9087c29bc4db1d7b1f476c007ee4f439c1a9aca247878c80ec496a40b0"
+      }
+    },
+    "141": {
+      "id": 141,
+      "topic": "Crawlability and Indexability Audits",
+      "children": [],
+      "parents": [
+        28
+      ],
+      "metadata": {
+        "uuid": "1979bcf2-fff9-414f-bce8-df49cfcd4296",
+        "topic_hash": "5f03261ab8e7e6782abef09c48814763f2ce56941d55e0e0d9b610d4e748c199"
+      }
+    },
+    "142": {
+      "id": 142,
+      "topic": "Website Performance and Core Web Vitals Monitoring",
+      "children": [],
+      "parents": [
+        28
+      ],
+      "metadata": {
+        "uuid": "ad6e3022-227b-400d-b1fa-a8a946a510c0",
+        "topic_hash": "ed6e9b7e491ce38ab882ac098a19c78cd1b4ace8163f46911dddb6c741a3a8d0"
+      }
+    },
+    "143": {
+      "id": 143,
+      "topic": "Structured Data Implementation and Validation",
+      "children": [],
+      "parents": [
+        28
+      ],
+      "metadata": {
+        "uuid": "41b9db1e-ed79-4104-bbda-b85ddcd0b0c1",
+        "topic_hash": "64309949d7bf6063db3aa94ae54862e6ab4e07b2b0e2dd094d8d7f1cca0d51c6"
+      }
+    },
+    "144": {
+      "id": 144,
+      "topic": "Technical SEO Security Audits (HTTPS, Malware)",
+      "children": [],
+      "parents": [
+        28
+      ],
+      "metadata": {
+        "uuid": "e5cb1a21-05ea-45d3-b9b0-ae5544317894",
+        "topic_hash": "862a932b22faa74a5c5e170871643decf10a0cbf1b02f19e58bbc88512655166"
+      }
+    },
+    "145": {
+      "id": 145,
+      "topic": "Log File Analysis for SEO Insights",
+      "children": [],
+      "parents": [
+        28
+      ],
+      "metadata": {
+        "uuid": "4864a85e-6b3b-4bde-91a3-e70ac41746b8",
+        "topic_hash": "e93fa7c8eaeadc1454d95498dc4d2f47953d2fbcdc52a36b45301172e5a7cbc2"
+      }
+    },
+    "146": {
+      "id": 146,
+      "topic": "Understanding Backlink Profiles",
+      "children": [],
+      "parents": [
+        29
+      ],
+      "metadata": {
+        "uuid": "995e1d8e-f1a6-4f0a-a78c-62061b8ad3fa",
+        "topic_hash": "d87343265d4e622d929cfca45bc1ac99b835bdd9b521e9ac5baa9d55b02d5d6b"
+      }
+    },
+    "147": {
+      "id": 147,
+      "topic": "Identifying High-Quality Link Prospects",
+      "children": [],
+      "parents": [
+        29
+      ],
+      "metadata": {
+        "uuid": "607ccca6-dd3c-4da1-8407-2bd33d135bb6",
+        "topic_hash": "2d423acf2830b23a8ec5adcefe8750c8727944381e4838e4b8661181018fc1fa"
+      }
+    },
+    "148": {
+      "id": 148,
+      "topic": "Common Link Building Strategies",
+      "children": [],
+      "parents": [
+        29
+      ],
+      "metadata": {
+        "uuid": "244d4c69-926c-432d-ad2a-6be1ac07c78d",
+        "topic_hash": "d30059780ba900d7b83663b7a8120aeecafe529f4b4c7d2a1fc413c13d085433"
+      }
+    },
+    "149": {
+      "id": 149,
+      "topic": "Competitor Backlink Analysis Techniques",
+      "children": [],
+      "parents": [
+        29
+      ],
+      "metadata": {
+        "uuid": "b8668ae1-f19f-4ca6-b90d-999e8024ff4b",
+        "topic_hash": "187483b641c0560fddce8e854d22aecfb0960959a9a21b4312f5e1ee63e28b55"
+      }
+    },
+    "150": {
+      "id": 150,
+      "topic": "Monitoring and Disavowing Harmful Backlinks",
+      "children": [],
+      "parents": [
+        29
+      ],
+      "metadata": {
+        "uuid": "13a732a2-b39a-4826-a175-78a288480d62",
+        "topic_hash": "c2f2602de30f83e8321383eb4264aa8eeca0a8d2910425191bb59169ed394e3d"
+      }
+    },
+    "151": {
+      "id": 151,
+      "topic": "Competitor Keyword Research Tools",
+      "children": [],
+      "parents": [
+        30
+      ],
+      "metadata": {
+        "uuid": "16e2c75b-585b-46cf-8fc0-66a9b110b7b4",
+        "topic_hash": "f4365c7c025f2606205075aed565e272ab8b985094a8f7e9c41d22aa254a7504"
+      }
+    },
+    "152": {
+      "id": 152,
+      "topic": "Competitor Backlink Analysis Tools",
+      "children": [],
+      "parents": [
+        30
+      ],
+      "metadata": {
+        "uuid": "64d93a0e-cc3b-4c26-b898-2a93701551ea",
+        "topic_hash": "a6aae11c9caf7842ed52a3de800a538f79b0e85149f9c32cf04be816f6ea6cd0"
+      }
+    },
+    "153": {
+      "id": 153,
+      "topic": "SERP Rank Tracking Tools",
+      "children": [],
+      "parents": [
+        30
+      ],
+      "metadata": {
+        "uuid": "c5bded20-f63d-4674-a4ed-c4f00e6c826e",
+        "topic_hash": "8fa575df0e0d81be14375560378e1c76e6c6e633cef9a4a583caebb5fd700efc"
+      }
+    },
+    "154": {
+      "id": 154,
+      "topic": "Website Traffic Analysis Tools",
+      "children": [],
+      "parents": [
+        30
+      ],
+      "metadata": {
+        "uuid": "595ba002-c29a-42d2-a74d-b39cca37955f",
+        "topic_hash": "46b0a7d08249adec5f6dfe6f2590ad6c34370eaf21f2e3512d02e57ef7737476"
+      }
+    },
+    "155": {
+      "id": 155,
+      "topic": "Content Gap & Opportunity Analysis Tools",
+      "children": [],
+      "parents": [
+        30
+      ],
+      "metadata": {
+        "uuid": "4dfc571e-1111-4208-8f5e-316cbfea7c6b",
+        "topic_hash": "56cad138215d6d7584ad19eecbea1a395a18247d1de3ec464da29a0fb4a8c0f5"
+      }
+    }
+  },
+  "root_id": 0,
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "temperature": 0.85,
+    "created_at": "2026-02-07T18:15:49.523561+00:00"
+  }
+}

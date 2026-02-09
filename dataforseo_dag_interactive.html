@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "0", "label": "0", "level": 0, "shape": "dot", "title": "Depth 0: Generate diverse SEO tasks using 10 core tools calling a single tool\n"}, {"color": "#97c2fc", "id": "1", "label": "1", "level": 1, "shape": "dot", "title": "Depth 1: Understanding Diverse SEO Task Categories"}, {"color": "#97c2fc", "id": "2", "label": "2", "level": 1, "shape": "dot", "title": "Depth 1: Key Features of the 10 Core SEO Tools"}, {"color": "#97c2fc", "id": "3", "label": "3", "level": 1, "shape": "dot", "title": "Depth 1: Designing the Single Orchestration Tool for SEO Task Management"}, {"color": "#97c2fc", "id": "4", "label": "4", "level": 1, "shape": "dot", "title": "Depth 1: Automated Workflow for Generating SEO Tasks"}, {"color": "#97c2fc", "id": "5", "label": "5", "level": 1, "shape": "dot", "title": "Depth 1: Benefits and Challenges of Unified SEO Task Generation"}, {"color": "#97c2fc", "id": "12", "label": "12", "level": 1, "shape": "dot", "title": "Depth 1: Improved Data Consistency and Reporting Across Tools"}, {"color": "#97c2fc", "id": "15", "label": "15", "level": 1, "shape": "dot", "title": "Depth 1: User Adoption and Training Requirements for the Single Tool"}, {"color": "#97c2fc", "id": "19", "label": "19", "level": 1, "shape": "dot", "title": "Depth 1: Monitoring and Reporting of Automated SEO Tasks"}, {"color": "#97c2fc", "id": "21", "label": "21", "level": 1, "shape": "dot", "title": "Depth 1: Detailed Breakdown of On-Page SEO Task Categories"}, {"color": "#97c2fc", "id": "22", "label": "22", "level": 1, "shape": "dot", "title": "Depth 1: Exploring Off-Page SEO Task Categories and Strategies"}, {"color": "#97c2fc", "id": "23", "label": "23", "level": 1, "shape": "dot", "title": "Depth 1: Technical SEO Task Categories: Crawling, Indexing, and Performance"}, {"color": "#97c2fc", "id": "24", "label": "24", "level": 1, "shape": "dot", "title": "Depth 1: Understanding Keyword Research and Content Planning Task Categories"}, {"color": "#97c2fc", "id": "25", "label": "25", "level": 1, "shape": "dot", "title": "Depth 1: Emerging SEO Task Categories: Voice Search, AI, and Local SEO"}, {"color": "#97c2fc", "id": "26", "label": "26", "level": 1, "shape": "dot", "title": "Depth 1: Keyword Research and Analysis Tool Features"}, {"color": "#97c2fc", "id": "29", "label": "29", "level": 1, "shape": "dot", "title": "Depth 1: Backlink Analysis and Link Building Features"}, {"color": "#97c2fc", "id": "7", "label": "7", "level": 2, "shape": "dot", "title": "Depth 2: Defining Task Inputs and Outputs for Orchestration"}, {"color": "#97c2fc", "id": "16", "label": "16", "level": 2, "shape": "dot", "title": "Depth 2: Defining Input Parameters for Automated Task Generation"}, {"color": "#97c2fc", "id": "27", "label": "27", "level": 2, "shape": "dot", "title": "Depth 2: On-Page SEO Optimization Functionalities"}, {"color": "#97c2fc", "id": "28", "label": "28", "level": 2, "shape": "dot", "title": "Depth 2: Technical SEO Auditing and Monitoring Capabilities"}, {"color": "#97c2fc", "id": "30", "label": "30", "level": 2, "shape": "dot", "title": "Depth 2: Competitor Analysis and SERP Tracking Tools"}, {"color": "#97c2fc", "id": "6", "label": "6", "level": 2, "shape": "dot", "title": "Depth 2: Architecture of the Orchestration Tool"}, {"color": "#97c2fc", "id": "8", "label": "8", "level": 2, "shape": "dot", "title": "Depth 2: Integration APIs and Connectors for 10 Core Tools"}, {"color": "#97c2fc", "id": "13", "label": "13", "level": 2, "shape": "dot", "title": "Depth 2: Integration Complexities with Diverse SEO Toolsets"}, {"color": "#97c2fc", "id": "17", "label": "17", "level": 2, "shape": "dot", "title": "Depth 2: API Integration Strategies for SEO Tools"}, {"color": "#97c2fc", "id": "9", "label": "9", "level": 2, "shape": "dot", "title": "Depth 2: Workflow Engine and Task Scheduling Logic"}, {"color": "#97c2fc", "id": "10", "label": "10", "level": 2, "shape": "dot", "title": "Depth 2: User Interface (UI) and Reporting Dashboard Design"}, {"color": "#97c2fc", "id": "11", "label": "11", "level": 2, "shape": "dot", "title": "Depth 2: Efficiency Gains from Centralized SEO Task Management"}, {"color": "#97c2fc", "id": "14", "label": "14", "level": 2, "shape": "dot", "title": "Depth 2: Scalability and Performance Challenges of a Unified System"}, {"color": "#97c2fc", "id": "18", "label": "18", "level": 2, "shape": "dot", "title": "Depth 2: Workflow Orchestration and Task Scheduling"}, {"color": "#97c2fc", "id": "20", "label": "20", "level": 2, "shape": "dot", "title": "Depth 2: Error Handling and Resiliency in Automated Workflows"}, {"color": "#97c2fc", "id": "31", "label": "31", "level": 3, "shape": "dot", "title": "Depth 3: Core Components of the Orchestration Tool"}, {"color": "#97c2fc", "id": "32", "label": "32", "level": 3, "shape": "dot", "title": "Depth 3: Scalability and High Availability Design"}, {"color": "#97c2fc", "id": "33", "label": "33", "level": 3, "shape": "dot", "title": "Depth 3: Plugin and Extension Architecture"}, {"color": "#97c2fc", "id": "34", "label": "34", "level": 3, "shape": "dot", "title": "Depth 3: Security Architecture and Mechanisms"}, {"color": "#97c2fc", "id": "35", "label": "35", "level": 3, "shape": "dot", "title": "Depth 3: Integration with External Systems"}, {"color": "#97c2fc", "id": "41", "label": "41", "level": 3, "shape": "dot", "title": "Depth 3: Input Data Types and Validation"}, {"color": "#97c2fc", "id": "42", "label": "42", "level": 3, "shape": "dot", "title": "Depth 3: Output Data Structures and Serialization"}, {"color": "#97c2fc", "id": "43", "label": "43", "level": 3, "shape": "dot", "title": "Depth 3: Parameterization and Dynamic Inputs"}, {"color": "#97c2fc", "id": "44", "label": "44", "level": 3, "shape": "dot", "title": "Depth 3: Error Handling and Fallbacks for I/O"}, {"color": "#97c2fc", "id": "45", "label": "45", "level": 3, "shape": "dot", "title": "Depth 3: Schema Definition and Metadata for I/O"}, {"color": "#97c2fc", "id": "51", "label": "51", "level": 3, "shape": "dot", "title": "Depth 3: API Types and Protocols for Tool Integration"}, {"color": "#97c2fc", "id": "52", "label": "52", "level": 3, "shape": "dot", "title": "Depth 3: Pre-built Connectors and iPaaS Solutions"}, {"color": "#97c2fc", "id": "53", "label": "53", "level": 3, "shape": "dot", "title": "Depth 3: Security and Authentication for Integration APIs"}, {"color": "#97c2fc", "id": "54", "label": "54", "level": 3, "shape": "dot", "title": "Depth 3: Data Transformation and Mapping in Integrations"}, {"color": "#97c2fc", "id": "55", "label": "55", "level": 3, "shape": "dot", "title": "Depth 3: Monitoring, Logging, and Error Handling for API Integrations"}, {"color": "#97c2fc", "id": "36", "label": "36", "level": 3, "shape": "dot", "title": "Depth 3: Workflow Definition Languages"}, {"color": "#97c2fc", "id": "37", "label": "37", "level": 3, "shape": "dot", "title": "Depth 3: Task Orchestration Patterns"}, {"color": "#97c2fc", "id": "38", "label": "38", "level": 3, "shape": "dot", "title": "Depth 3: Scheduler Algorithms"}, {"color": "#97c2fc", "id": "39", "label": "39", "level": 3, "shape": "dot", "title": "Depth 3: Error Handling and Retries"}, {"color": "#97c2fc", "id": "40", "label": "40", "level": 3, "shape": "dot", "title": "Depth 3: Scalability and Distributed Execution"}, {"color": "#97c2fc", "id": "46", "label": "46", "level": 3, "shape": "dot", "title": "Depth 3: Principles of UI/UX Design for Dashboards"}, {"color": "#97c2fc", "id": "47", "label": "47", "level": 3, "shape": "dot", "title": "Depth 3: Data Visualization Best Practices for Reporting"}, {"color": "#97c2fc", "id": "48", "label": "48", "level": 3, "shape": "dot", "title": "Depth 3: Interactive Elements and User Controls in Dashboards"}, {"color": "#97c2fc", "id": "49", "label": "49", "level": 3, "shape": "dot", "title": "Depth 3: Dashboard Layout and Information Architecture"}, {"color": "#97c2fc", "id": "50", "label": "50", "level": 3, "shape": "dot", "title": "Depth 3: Accessibility and Inclusivity in UI Design"}, {"color": "#97c2fc", "id": "56", "label": "56", "level": 3, "shape": "dot", "title": "Depth 3: Streamlined Workflow Automation in Centralized SEO"}, {"color": "#97c2fc", "id": "57", "label": "57", "level": 3, "shape": "dot", "title": "Depth 3: Improved Team Collaboration and Communication in SEO"}, {"color": "#97c2fc", "id": "58", "label": "58", "level": 3, "shape": "dot", "title": "Depth 3: Enhanced Data Accessibility and Reporting for SEO Performance"}, {"color": "#97c2fc", "id": "59", "label": "59", "level": 3, "shape": "dot", "title": "Depth 3: Reduced Redundancy and Cost Savings in SEO Operations"}, {"color": "#97c2fc", "id": "60", "label": "60", "level": 3, "shape": "dot", "title": "Depth 3: Scalability of SEO Initiatives with Centralized Management"}, {"color": "#97c2fc", "id": "61", "label": "61", "level": 2, "shape": "dot", "title": "Depth 2: Standardized Data Models for Interoperability"}, {"color": "#97c2fc", "id": "62", "label": "62", "level": 2, "shape": "dot", "title": "Depth 2: Automated Data Synchronization Mechanisms"}, {"color": "#97c2fc", "id": "63", "label": "63", "level": 2, "shape": "dot", "title": "Depth 2: Centralized Reporting and Dashboard Solutions"}, {"color": "#97c2fc", "id": "64", "label": "64", "level": 2, "shape": "dot", "title": "Depth 2: Data Validation and Quality Assurance Protocols"}, {"color": "#97c2fc", "id": "65", "label": "65", "level": 2, "shape": "dot", "title": "Depth 2: Integration Strategies for Disparate Data Sources"}, {"color": "#97c2fc", "id": "76", "label": "76", "level": 3, "shape": "dot", "title": "Depth 3: Data Inconsistencies Across Diverse SEO Tools"}, {"color": "#97c2fc", "id": "77", "label": "77", "level": 3, "shape": "dot", "title": "Depth 3: API Limitations and Interoperability Challenges"}, {"color": "#97c2fc", "id": "78", "label": "78", "level": 3, "shape": "dot", "title": "Depth 3: Manual Data Consolidation and Workflow Disruptions"}, {"color": "#97c2fc", "id": "79", "label": "79", "level": 3, "shape": "dot", "title": "Depth 3: Redundant Features and Cost Overlaps in Toolsets"}, {"color": "#97c2fc", "id": "80", "label": "80", "level": 3, "shape": "dot", "title": "Depth 3: Challenges in Unified SEO Reporting and Dashboards"}, {"color": "#97c2fc", "id": "66", "label": "66", "level": 3, "shape": "dot", "title": "Depth 3: Data Consistency in Distributed Unified Systems"}, {"color": "#97c2fc", "id": "67", "label": "67", "level": 3, "shape": "dot", "title": "Depth 3: Latency and Throughput Optimization Strategies"}, {"color": "#97c2fc", "id": "68", "label": "68", "level": 3, "shape": "dot", "title": "Depth 3: Resource Contention and Deadlock Management"}, {"color": "#97c2fc", "id": "69", "label": "69", "level": 3, "shape": "dot", "title": "Depth 3: Fault Tolerance and Resilience in Scalable Architectures"}, {"color": "#97c2fc", "id": "70", "label": "70", "level": 3, "shape": "dot", "title": "Depth 3: Monitoring and Profiling Complex Unified Systems"}, {"color": "#97c2fc", "id": "71", "label": "71", "level": 2, "shape": "dot", "title": "Depth 2: Training Program Development for the Single Tool"}, {"color": "#97c2fc", "id": "72", "label": "72", "level": 2, "shape": "dot", "title": "Depth 2: User Onboarding Strategies and Best Practices"}, {"color": "#97c2fc", "id": "73", "label": "73", "level": 2, "shape": "dot", "title": "Depth 2: Change Management for Successful Tool Adoption"}, {"color": "#97c2fc", "id": "74", "label": "74", "level": 2, "shape": "dot", "title": "Depth 2: Measuring User Adoption and Training Effectiveness"}, {"color": "#97c2fc", "id": "75", "label": "75", "level": 2, "shape": "dot", "title": "Depth 2: Ongoing Support and Continuous Learning Initiatives"}, {"color": "#97c2fc", "id": "86", "label": "86", "level": 3, "shape": "dot", "title": "Depth 3: Types of Input Parameters (e.g., text, numerical, categorical)"}, {"color": "#97c2fc", "id": "87", "label": "87", "level": 3, "shape": "dot", "title": "Depth 3: Schema Definition for Input Parameters"}, {"color": "#97c2fc", "id": "88", "label": "88", "level": 3, "shape": "dot", "title": "Depth 3: Validation and Constraints for Input Parameters"}, {"color": "#97c2fc", "id": "89", "label": "89", "level": 3, "shape": "dot", "title": "Depth 3: Impact of Input Parameters on Generated Task Complexity"}, {"color": "#97c2fc", "id": "90", "label": "90", "level": 3, "shape": "dot", "title": "Depth 3: Methods for Dynamic Input Parameter Generation"}, {"color": "#97c2fc", "id": "91", "label": "91", "level": 3, "shape": "dot", "title": "Depth 3: Benefits of API Integration for SEO Automation"}, {"color": "#97c2fc", "id": "92", "label": "92", "level": 3, "shape": "dot", "title": "Depth 3: Common SEO Tool APIs and Their Capabilities"}, {"color": "#97c2fc", "id": "93", "label": "93", "level": 3, "shape": "dot", "title": "Depth 3: Technical Challenges in API Integration for SEO Data"}, {"color": "#97c2fc", "id": "94", "label": "94", "level": 3, "shape": "dot", "title": "Depth 3: Advanced Use Cases for Integrated SEO Data"}, {"color": "#97c2fc", "id": "95", "label": "95", "level": 3, "shape": "dot", "title": "Depth 3: Best Practices for Secure API Key Management in SEO Tools"}, {"color": "#97c2fc", "id": "81", "label": "81", "level": 3, "shape": "dot", "title": "Depth 3: Concepts of Workflow Orchestration"}, {"color": "#97c2fc", "id": "82", "label": "82", "level": 3, "shape": "dot", "title": "Depth 3: Task Scheduling Algorithms and Strategies"}, {"color": "#97c2fc", "id": "83", "label": "83", "level": 3, "shape": "dot", "title": "Depth 3: Workflow Management Systems (WfMS) Overview"}, {"color": "#97c2fc", "id": "84", "label": "84", "level": 3, "shape": "dot", "title": "Depth 3: Error Handling and Fault Tolerance in Workflows"}, {"color": "#97c2fc", "id": "85", "label": "85", "level": 3, "shape": "dot", "title": "Depth 3: Monitoring and Logging for Orchestrated Workflows"}, {"color": "#97c2fc", "id": "96", "label": "96", "level": 2, "shape": "dot", "title": "Depth 2: Defining Key Performance Indicators (KPIs) for Automated SEO"}, {"color": "#97c2fc", "id": "97", "label": "97", "level": 2, "shape": "dot", "title": "Depth 2: Tools and Platforms for Automated SEO Monitoring"}, {"color": "#97c2fc", "id": "98", "label": "98", "level": 2, "shape": "dot", "title": "Depth 2: Automated Report Generation for SEO Performance"}, {"color": "#97c2fc", "id": "99", "label": "99", "level": 2, "shape": "dot", "title": "Depth 2: Alerts and Notifications for SEO Anomalies"}, {"color": "#97c2fc", "id": "100", "label": "100", "level": 2, "shape": "dot", "title": "Depth 2: Data Visualization and Dashboards for SEO Reporting"}, {"color": "#97c2fc", "id": "101", "label": "101", "level": 3, "shape": "dot", "title": "Depth 3: Types of Errors in Automated Workflows"}, {"color": "#97c2fc", "id": "102", "label": "102", "level": 3, "shape": "dot", "title": "Depth 3: Error Detection and Logging Strategies"}, {"color": "#97c2fc", "id": "103", "label": "103", "level": 3, "shape": "dot", "title": "Depth 3: Automated Error Recovery and Retries"}, {"color": "#97c2fc", "id": "104", "label": "104", "level": 3, "shape": "dot", "title": "Depth 3: Implementing Resiliency Patterns in Workflows"}, {"color": "#97c2fc", "id": "105", "label": "105", "level": 3, "shape": "dot", "title": "Depth 3: Monitoring and Alerting for Workflow Health"}, {"color": "#97c2fc", "id": "106", "label": "106", "level": 2, "shape": "dot", "title": "Depth 2: Keyword Research \u0026 Placement for On-Page SEO"}, {"color": "#97c2fc", "id": "107", "label": "107", "level": 2, "shape": "dot", "title": "Depth 2: Content Optimization (Text, Images, Video)"}, {"color": "#97c2fc", "id": "108", "label": "108", "level": 2, "shape": "dot", "title": "Depth 2: Technical On-Page SEO Elements (Meta Tags, Headings, URL Structure)"}, {"color": "#97c2fc", "id": "109", "label": "109", "level": 2, "shape": "dot", "title": "Depth 2: User Experience (UX) \u0026 Engagement Signals"}, {"color": "#97c2fc", "id": "110", "label": "110", "level": 2, "shape": "dot", "title": "Depth 2: Internal Linking Strategies \u0026 Best Practices"}, {"color": "#97c2fc", "id": "111", "label": "111", "level": 2, "shape": "dot", "title": "Depth 2: Link Building Strategies for Off-Page SEO"}, {"color": "#97c2fc", "id": "112", "label": "112", "level": 2, "shape": "dot", "title": "Depth 2: Social Media Marketing\u0027s Role in Off-Page SEO"}, {"color": "#97c2fc", "id": "113", "label": "113", "level": 2, "shape": "dot", "title": "Depth 2: Local SEO: Citations, Reviews, and Directories"}, {"color": "#97c2fc", "id": "114", "label": "114", "level": 2, "shape": "dot", "title": "Depth 2: Content Marketing and Syndication for Off-Page SEO"}, {"color": "#97c2fc", "id": "115", "label": "115", "level": 2, "shape": "dot", "title": "Depth 2: Influencer Outreach and Partnerships in Off-Page SEO"}, {"color": "#97c2fc", "id": "121", "label": "121", "level": 2, "shape": "dot", "title": "Depth 2: Crawling Budget Optimization"}, {"color": "#97c2fc", "id": "122", "label": "122", "level": 2, "shape": "dot", "title": "Depth 2: Robots.txt and Crawl Directives"}, {"color": "#97c2fc", "id": "123", "label": "123", "level": 2, "shape": "dot", "title": "Depth 2: XML Sitemaps for Indexing"}, {"color": "#97c2fc", "id": "124", "label": "124", "level": 2, "shape": "dot", "title": "Depth 2: Canonical Tags and Duplicate Content"}, {"color": "#97c2fc", "id": "125", "label": "125", "level": 2, "shape": "dot", "title": "Depth 2: Core Web Vitals and Page Speed"}, {"color": "#97c2fc", "id": "116", "label": "116", "level": 2, "shape": "dot", "title": "Depth 2: Foundational Principles of Keyword Research"}, {"color": "#97c2fc", "id": "117", "label": "117", "level": 2, "shape": "dot", "title": "Depth 2: Categorizing Keywords: Types and Intent"}, {"color": "#97c2fc", "id": "118", "label": "118", "level": 2, "shape": "dot", "title": "Depth 2: Key Tools and Methodologies for Keyword Discovery"}, {"color": "#97c2fc", "id": "119", "label": "119", "level": 2, "shape": "dot", "title": "Depth 2: Integrating Keyword Research into Content Strategy"}, {"color": "#97c2fc", "id": "120", "label": "120", "level": 2, "shape": "dot", "title": "Depth 2: Performance Metrics for Keyword and Content Success"}, {"color": "#97c2fc", "id": "131", "label": "131", "level": 2, "shape": "dot", "title": "Depth 2: Optimizing for Voice Search Queries"}, {"color": "#97c2fc", "id": "132", "label": "132", "level": 2, "shape": "dot", "title": "Depth 2: AI-Powered Content Generation and SEO Analysis"}, {"color": "#97c2fc", "id": "133", "label": "133", "level": 2, "shape": "dot", "title": "Depth 2: Advanced Local SEO Tactics for Businesses"}, {"color": "#97c2fc", "id": "134", "label": "134", "level": 2, "shape": "dot", "title": "Depth 2: The Interplay of Voice Search and Local SEO"}, {"color": "#97c2fc", "id": "135", "label": "135", "level": 2, "shape": "dot", "title": "Depth 2: Future Trends in AI and Predictive SEO"}, {"color": "#97c2fc", "id": "126", "label": "126", "level": 2, "shape": "dot", "title": "Depth 2: Keyword Suggestion and Discovery"}, {"color": "#97c2fc", "id": "127", "label": "127", "level": 2, "shape": "dot", "title": "Depth 2: Search Volume and Trend Analysis"}, {"color": "#97c2fc", "id": "128", "label": "128", "level": 2, "shape": "dot", "title": "Depth 2: Competitor Keyword Analysis"}, {"color": "#97c2fc", "id": "129", "label": "129", "level": 2, "shape": "dot", "title": "Depth 2: Keyword Difficulty and SERP Analysis"}, {"color": "#97c2fc", "id": "130", "label": "130", "level": 2, "shape": "dot", "title": "Depth 2: Keyword Organization and List Management"}, {"color": "#97c2fc", "id": "136", "label": "136", "level": 3, "shape": "dot", "title": "Depth 3: Keyword Research and Placement"}, {"color": "#97c2fc", "id": "137", "label": "137", "level": 3, "shape": "dot", "title": "Depth 3: Meta Tags Optimization (Title \u0026 Description)"}, {"color": "#97c2fc", "id": "138", "label": "138", "level": 3, "shape": "dot", "title": "Depth 3: Content Quality and Structure"}, {"color": "#97c2fc", "id": "139", "label": "139", "level": 3, "shape": "dot", "title": "Depth 3: Image Optimization (Alt Text \u0026 Compression)"}, {"color": "#97c2fc", "id": "140", "label": "140", "level": 3, "shape": "dot", "title": "Depth 3: URL Structure Optimization"}, {"color": "#97c2fc", "id": "141", "label": "141", "level": 3, "shape": "dot", "title": "Depth 3: Crawlability and Indexability Audits"}, {"color": "#97c2fc", "id": "142", "label": "142", "level": 3, "shape": "dot", "title": "Depth 3: Website Performance and Core Web Vitals Monitoring"}, {"color": "#97c2fc", "id": "143", "label": "143", "level": 3, "shape": "dot", "title": "Depth 3: Structured Data Implementation and Validation"}, {"color": "#97c2fc", "id": "144", "label": "144", "level": 3, "shape": "dot", "title": "Depth 3: Technical SEO Security Audits (HTTPS, Malware)"}, {"color": "#97c2fc", "id": "145", "label": "145", "level": 3, "shape": "dot", "title": "Depth 3: Log File Analysis for SEO Insights"}, {"color": "#97c2fc", "id": "146", "label": "146", "level": 2, "shape": "dot", "title": "Depth 2: Understanding Backlink Profiles"}, {"color": "#97c2fc", "id": "147", "label": "147", "level": 2, "shape": "dot", "title": "Depth 2: Identifying High-Quality Link Prospects"}, {"color": "#97c2fc", "id": "148", "label": "148", "level": 2, "shape": "dot", "title": "Depth 2: Common Link Building Strategies"}, {"color": "#97c2fc", "id": "149", "label": "149", "level": 2, "shape": "dot", "title": "Depth 2: Competitor Backlink Analysis Techniques"}, {"color": "#97c2fc", "id": "150", "label": "150", "level": 2, "shape": "dot", "title": "Depth 2: Monitoring and Disavowing Harmful Backlinks"}, {"color": "#97c2fc", "id": "151", "label": "151", "level": 3, "shape": "dot", "title": "Depth 3: Competitor Keyword Research Tools"}, {"color": "#97c2fc", "id": "152", "label": "152", "level": 3, "shape": "dot", "title": "Depth 3: Competitor Backlink Analysis Tools"}, {"color": "#97c2fc", "id": "153", "label": "153", "level": 3, "shape": "dot", "title": "Depth 3: SERP Rank Tracking Tools"}, {"color": "#97c2fc", "id": "154", "label": "154", "level": 3, "shape": "dot", "title": "Depth 3: Website Traffic Analysis Tools"}, {"color": "#97c2fc", "id": "155", "label": "155", "level": 3, "shape": "dot", "title": "Depth 3: Content Gap \u0026 Opportunity Analysis Tools"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "0", "to": "1"}, {"arrows": "to", "from": "0", "to": "2"}, {"arrows": "to", "from": "0", "to": "3"}, {"arrows": "to", "from": "0", "to": "4"}, {"arrows": "to", "from": "0", "to": "5"}, {"arrows": "to", "from": "0", "to": "12"}, {"arrows": "to", "from": "0", "to": "15"}, {"arrows": "to", "from": "0", "to": "19"}, {"arrows": "to", "from": "0", "to": "21"}, {"arrows": "to", "from": "0", "to": "22"}, {"arrows": "to", "from": "0", "to": "23"}, {"arrows": "to", "from": "0", "to": "24"}, {"arrows": "to", "from": "0", "to": "25"}, {"arrows": "to", "from": "0", "to": "26"}, {"arrows": "to", "from": "0", "to": "29"}, {"arrows": "to", "from": "1", "to": "7"}, {"arrows": "to", "from": "1", "to": "12"}, {"arrows": "to", "from": "1", "to": "16"}, {"arrows": "to", "from": "1", "to": "21"}, {"arrows": "to", "from": "1", "to": "22"}, {"arrows": "to", "from": "1", "to": "23"}, {"arrows": "to", "from": "1", "to": "24"}, {"arrows": "to", "from": "1", "to": "25"}, {"arrows": "to", "from": "1", "to": "26"}, {"arrows": "to", "from": "1", "to": "27"}, {"arrows": "to", "from": "1", "to": "28"}, {"arrows": "to", "from": "1", "to": "29"}, {"arrows": "to", "from": "1", "to": "30"}, {"arrows": "to", "from": "2", "to": "6"}, {"arrows": "to", "from": "2", "to": "8"}, {"arrows": "to", "from": "2", "to": "13"}, {"arrows": "to", "from": "2", "to": "16"}, {"arrows": "to", "from": "2", "to": "17"}, {"arrows": "to", "from": "2", "to": "21"}, {"arrows": "to", "from": "2", "to": "22"}, {"arrows": "to", "from": "2", "to": "23"}, {"arrows": "to", "from": "2", "to": "24"}, {"arrows": "to", "from": "2", "to": "26"}, {"arrows": "to", "from": "2", "to": "27"}, {"arrows": "to", "from": "2", "to": "28"}, {"arrows": "to", "from": "2", "to": "29"}, {"arrows": "to", "from": "2", "to": "30"}, {"arrows": "to", "from": "3", "to": "6"}, {"arrows": "to", "from": "3", "to": "7"}, {"arrows": "to", "from": "3", "to": "8"}, {"arrows": "to", "from": "3", "to": "9"}, {"arrows": "to", "from": "3", "to": "10"}, {"arrows": "to", "from": "3", "to": "11"}, {"arrows": "to", "from": "3", "to": "13"}, {"arrows": "to", "from": "3", "to": "14"}, {"arrows": "to", "from": "3", "to": "15"}, {"arrows": "to", "from": "3", "to": "17"}, {"arrows": "to", "from": "3", "to": "18"}, {"arrows": "to", "from": "3", "to": "20"}, {"arrows": "to", "from": "3", "to": "27"}, {"arrows": "to", "from": "4", "to": "9"}, {"arrows": "to", "from": "4", "to": "11"}, {"arrows": "to", "from": "4", "to": "14"}, {"arrows": "to", "from": "4", "to": "16"}, {"arrows": "to", "from": "4", "to": "17"}, {"arrows": "to", "from": "4", "to": "18"}, {"arrows": "to", "from": "4", "to": "19"}, {"arrows": "to", "from": "4", "to": "20"}, {"arrows": "to", "from": "4", "to": "28"}, {"arrows": "to", "from": "5", "to": "10"}, {"arrows": "to", "from": "5", "to": "11"}, {"arrows": "to", "from": "5", "to": "12"}, {"arrows": "to", "from": "5", "to": "13"}, {"arrows": "to", "from": "5", "to": "14"}, {"arrows": "to", "from": "5", "to": "15"}, {"arrows": "to", "from": "5", "to": "19"}, {"arrows": "to", "from": "5", "to": "20"}, {"arrows": "to", "from": "5", "to": "30"}, {"arrows": "to", "from": "12", "to": "61"}, {"arrows": "to", "from": "12", "to": "62"}, {"arrows": "to", "from": "12", "to": "63"}, {"arrows": "to", "from": "12", "to": "64"}, {"arrows": "to", "from": "12", "to": "65"}, {"arrows": "to", "from": "15", "to": "71"}, {"arrows": "to", "from": "15", "to": "72"}, {"arrows": "to", "from": "15", "to": "73"}, {"arrows": "to", "from": "15", "to": "74"}, {"arrows": "to", "from": "15", "to": "75"}, {"arrows": "to", "from": "19", "to": "96"}, {"arrows": "to", "from": "19", "to": "97"}, {"arrows": "to", "from": "19", "to": "98"}, {"arrows": "to", "from": "19", "to": "99"}, {"arrows": "to", "from": "19", "to": "100"}, {"arrows": "to", "from": "21", "to": "106"}, {"arrows": "to", "from": "21", "to": "107"}, {"arrows": "to", "from": "21", "to": "108"}, {"arrows": "to", "from": "21", "to": "109"}, {"arrows": "to", "from": "21", "to": "110"}, {"arrows": "to", "from": "22", "to": "111"}, {"arrows": "to", "from": "22", "to": "112"}, {"arrows": "to", "from": "22", "to": "113"}, {"arrows": "to", "from": "22", "to": "114"}, {"arrows": "to", "from": "22", "to": "115"}, {"arrows": "to", "from": "23", "to": "121"}, {"arrows": "to", "from": "23", "to": "122"}, {"arrows": "to", "from": "23", "to": "123"}, {"arrows": "to", "from": "23", "to": "124"}, {"arrows": "to", "from": "23", "to": "125"}, {"arrows": "to", "from": "24", "to": "116"}, {"arrows": "to", "from": "24", "to": "117"}, {"arrows": "to", "from": "24", "to": "118"}, {"arrows": "to", "from": "24", "to": "119"}, {"arrows": "to", "from": "24", "to": "120"}, {"arrows": "to", "from": "25", "to": "131"}, {"arrows": "to", "from": "25", "to": "132"}, {"arrows": "to", "from": "25", "to": "133"}, {"arrows": "to", "from": "25", "to": "134"}, {"arrows": "to", "from": "25", "to": "135"}, {"arrows": "to", "from": "26", "to": "126"}, {"arrows": "to", "from": "26", "to": "127"}, {"arrows": "to", "from": "26", "to": "128"}, {"arrows": "to", "from": "26", "to": "129"}, {"arrows": "to", "from": "26", "to": "130"}, {"arrows": "to", "from": "29", "to": "146"}, {"arrows": "to", "from": "29", "to": "147"}, {"arrows": "to", "from": "29", "to": "148"}, {"arrows": "to", "from": "29", "to": "149"}, {"arrows": "to", "from": "29", "to": "150"}, {"arrows": "to", "from": "7", "to": "41"}, {"arrows": "to", "from": "7", "to": "42"}, {"arrows": "to", "from": "7", "to": "43"}, {"arrows": "to", "from": "7", "to": "44"}, {"arrows": "to", "from": "7", "to": "45"}, {"arrows": "to", "from": "16", "to": "86"}, {"arrows": "to", "from": "16", "to": "87"}, {"arrows": "to", "from": "16", "to": "88"}, {"arrows": "to", "from": "16", "to": "89"}, {"arrows": "to", "from": "16", "to": "90"}, {"arrows": "to", "from": "27", "to": "136"}, {"arrows": "to", "from": "27", "to": "137"}, {"arrows": "to", "from": "27", "to": "138"}, {"arrows": "to", "from": "27", "to": "139"}, {"arrows": "to", "from": "27", "to": "140"}, {"arrows": "to", "from": "28", "to": "141"}, {"arrows": "to", "from": "28", "to": "142"}, {"arrows": "to", "from": "28", "to": "143"}, {"arrows": "to", "from": "28", "to": "144"}, {"arrows": "to", "from": "28", "to": "145"}, {"arrows": "to", "from": "30", "to": "151"}, {"arrows": "to", "from": "30", "to": "152"}, {"arrows": "to", "from": "30", "to": "153"}, {"arrows": "to", "from": "30", "to": "154"}, {"arrows": "to", "from": "30", "to": "155"}, {"arrows": "to", "from": "6", "to": "31"}, {"arrows": "to", "from": "6", "to": "32"}, {"arrows": "to", "from": "6", "to": "33"}, {"arrows": "to", "from": "6", "to": "34"}, {"arrows": "to", "from": "6", "to": "35"}, {"arrows": "to", "from": "8", "to": "51"}, {"arrows": "to", "from": "8", "to": "52"}, {"arrows": "to", "from": "8", "to": "53"}, {"arrows": "to", "from": "8", "to": "54"}, {"arrows": "to", "from": "8", "to": "55"}, {"arrows": "to", "from": "13", "to": "76"}, {"arrows": "to", "from": "13", "to": "77"}, {"arrows": "to", "from": "13", "to": "78"}, {"arrows": "to", "from": "13", "to": "79"}, {"arrows": "to", "from": "13", "to": "80"}, {"arrows": "to", "from": "17", "to": "91"}, {"arrows": "to", "from": "17", "to": "92"}, {"arrows": "to", "from": "17", "to": "93"}, {"arrows": "to", "from": "17", "to": "94"}, {"arrows": "to", "from": "17", "to": "95"}, {"arrows": "to", "from": "9", "to": "36"}, {"arrows": "to", "from": "9", "to": "37"}, {"arrows": "to", "from": "9", "to": "38"}, {"arrows": "to", "from": "9", "to": "39"}, {"arrows": "to", "from": "9", "to": "40"}, {"arrows": "to", "from": "10", "to": "46"}, {"arrows": "to", "from": "10", "to": "47"}, {"arrows": "to", "from": "10", "to": "48"}, {"arrows": "to", "from": "10", "to": "49"}, {"arrows": "to", "from": "10", "to": "50"}, {"arrows": "to", "from": "11", "to": "56"}, {"arrows": "to", "from": "11", "to": "57"}, {"arrows": "to", "from": "11", "to": "58"}, {"arrows": "to", "from": "11", "to": "59"}, {"arrows": "to", "from": "11", "to": "60"}, {"arrows": "to", "from": "14", "to": "66"}, {"arrows": "to", "from": "14", "to": "67"}, {"arrows": "to", "from": "14", "to": "68"}, {"arrows": "to", "from": "14", "to": "69"}, {"arrows": "to", "from": "14", "to": "70"}, {"arrows": "to", "from": "18", "to": "81"}, {"arrows": "to", "from": "18", "to": "82"}, {"arrows": "to", "from": "18", "to": "83"}, {"arrows": "to", "from": "18", "to": "84"}, {"arrows": "to", "from": "18", "to": "85"}, {"arrows": "to", "from": "20", "to": "101"}, {"arrows": "to", "from": "20", "to": "102"}, {"arrows": "to", "from": "20", "to": "103"}, {"arrows": "to", "from": "20", "to": "104"}, {"arrows": "to", "from": "20", "to": "105"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"layout": {"hierarchical": {"enabled": true, "direction": "UD", "sortMethod": "directed"}}, "physics": {"hierarchicalRepulsion": {"centralGravity": 0.0}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
