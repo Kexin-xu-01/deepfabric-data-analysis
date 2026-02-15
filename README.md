@@ -22,13 +22,13 @@ The workflow:
 
 ------------------------------------------------------------------------
 
-# 📦 Installation
+# Installation
 
 ## 1️⃣ Clone the repository
 
 ``` bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/Kexin-xu-01/deepfabric-data-analysis.git
+cd deepfabric-data-analysis
 ```
 
 ## 2️⃣ Create a virtual environment (recommended)
@@ -53,7 +53,7 @@ pip install networkx numpy sentence-transformers scikit-learn
 
 ------------------------------------------------------------------------
 
-# 📂 Input JSON Format
+# Input JSON Format
 
 The input graph must be structured like:
 
@@ -81,7 +81,7 @@ Embeddings are computed automatically if not present.
 
 ------------------------------------------------------------------------
 
-# 🚀 Running the Script
+# Running the Script
 
 Main script:
 
@@ -92,24 +92,18 @@ Main script:
 ``` bash
 python prune_topic_graph.py \
   --input seo-graph-10tools-single-5depth.json \
-  --out-filtered filtered_graph.json \
-  --out-report report.json \
+  --out-filtered seo-graph-10tools-single-5depth-3filt.json \
+  --out-report report-seo-graph-10tools-single-5depth-3filt.json \
   --model all-MiniLM-L6-v2 \
   --seed 0 \
-  --depth1-gtd 0.25 \
-  --gtd-neg 0.0 \
+  --depth1-gtd 0.25 
+  --gtd-neg 0.0 
   --ltd 0.25
-```
-
-## Windows PowerShell
-
-``` powershell
-python prune_topic_graph.py --input seo-graph-10tools-single-5depth.json --out-filtered filtered_graph.json --out-report report.json --model all-MiniLM-L6-v2 --seed 0 --depth1-gtd 0.25 --gtd-neg 0.0 --ltd 0.25
 ```
 
 ------------------------------------------------------------------------
 
-# 📊 Output Files
+# Output Files
 
 ## 1️⃣ Filtered Graph JSON
 
@@ -130,7 +124,7 @@ Contains:
 
 ------------------------------------------------------------------------
 
-# 🧠 Methodology
+# Methodology
 
 ### Global Topic Drift (GTD)
 
@@ -142,7 +136,7 @@ LTD(n) = max cosine(embedding(n), embedding(parent))
 
 ------------------------------------------------------------------------
 
-# 🛠 Troubleshooting
+# Troubleshooting
 
 ### First run downloads embedding model
 
@@ -157,8 +151,4 @@ Try increasing thresholds:
 --ltd 0.5
 ```
 
-------------------------------------------------------------------------
 
-# 📜 License
-
-MIT (or specify your license)
