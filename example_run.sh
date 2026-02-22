@@ -1,8 +1,8 @@
 #!/bin/bash
 python prune_topic_graph.py \
-  --input seo-graph-10tools-single-5depth.json \
-  --out-filtered seo-graph-10tools-single-5depth-filt.json \
-  --out-report report-seo-graph-10tools-single-5depth-filt.json \
+  --input data/seo-graph-10tools-single-5depth.json \
+  --out-filtered data/seo-graph-10tools-single-5depth-filt.json \
+  --out-report data/report-seo-graph-10tools-single-5depth-filt.json \
   --model all-MiniLM-L6-v2 \
   --seed 0 \
   --parent_coherence 0.25 \
